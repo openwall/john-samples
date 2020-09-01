@@ -1,0 +1,18 @@
+Generating a PKCS#12 Private Key and Public Certificate
+=======================================================
+
+1. Generate an RSA private key
+
+openssl genrsa -out openwall.key 1024
+
+2. Generate a Certificate Signing Request
+
+openssl req -new -key openwall.key -out openwall.csr
+
+3. Generate a self-signed public certificate based on the request
+
+openssl x509 -req -days 3650 -in openwall.csr -signkey openwall.key -out openwall.crt
+
+4. Generate a PKCS#12 file
+
+openssl pkcs12 -keypbe PBE-SHA1-3DES -certpbe PBE-SHA1-3DES -export -in openwall.crt -inkey openwall.key -out openwall.pfx -name "openwall"

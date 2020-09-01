@@ -1,0 +1,5 @@
+hdiutil create -encryption -stdinpass -srcfolder private encrypted.dmg
+
+hdiutil attach -stdinpass encrypted.dmg
+
+echo -n $password | hdiutil create -srcfolder $source -encryption -stdinpass -fs HFS+ -volname $vol_name $img_name

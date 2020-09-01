@@ -1,0 +1,506 @@
+hdiutil: WARNING: -passphrase has been deprecated in favor of -stdinpass
+2008-01-23 12:54:48.647 hdiutil[1926:1c03] using helper tool at "/System/Library/PrivateFrameworks/DiskImages.framework/Resources/diskimages-helper".
+2008-01-23 12:54:48.671 hdiutil[1926:1c03] connectToFramework
+2008-01-23 12:54:48.772 hdiutil[1926:1c03] sendOperationToHelper: about to ask proxy to start operation
+2008-01-23 12:54:48.789 diskimages-helper[1928:1603] _imageOptions: {
+    "enable-keychain" = 1;
+    passphrase = vilefault;
+}
+2008-01-23 12:54:48.792 diskimages-helper[1928:1603] _driveOptions: {
+    autodiskmount = 1;
+    "unmount-timeout" = 0;
+}
+2008-01-23 12:54:48.793 diskimages-helper[1928:1603] DIHelperAttach: initializing framework
+DILoadDriver: checking for disk image driver...DILoadDriver: DI_kextExists() returned 0x00000000 (0)...DIIsInitialized: returning NO2008-01-23 12:54:48.805 diskimages-helper[1928:1603] -checkForPreviouslyAttachedImage: entry
+2008-01-23 12:54:48.806 diskimages-helper[1928:1603] 
+
+
+file://localhost/Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage - (null) ((null), (null)). perm=0
+DIIsInitialized: returning YESCCarbonBackingStore::newProbe: setting initial rval to +100
+CDevBackingStore::newProbe: not /dev/disk or /dev/rdisk (/Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage).CCURLBackingStore::probe: not recognized URL scheme.
+CVectoredBackingStore::newProbe not "vectored" scheme.
+DIBackingStoreNewWithCFURL: instantiator returned 0
+DIBackingStoreNewWithCFURL: returning 0x00000000
+2008-01-23 12:54:48.809 diskimages-helper[1928:1603] -checkForPreviouslyAttachedImage: resolving file://localhost/Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage returned 0
+2008-01-23 12:54:48.810 diskimages-helper[1928:1603] -checkForPreviouslyAttachedImage: imageUID (
+    "d234881030:i7328819"
+) shadowUID (null)
+2008-01-23 12:54:48.814 diskimages-helper[1928:1603] DIHelperAttach: resolving disk image
+DIIsInitialized: returning YESDIIsInitialized: returning YESCCarbonBackingStore::newProbe: setting initial rval to +100
+CDevBackingStore::newProbe: not /dev/disk or /dev/rdisk (/Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage).CCURLBackingStore::probe: not recognized URL scheme.
+CVectoredBackingStore::newProbe not "vectored" scheme.
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage setPermission 1726
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage setPermission 1734
+DIBackingStoreNewWithCFURL: instantiator returned 0
+DIBackingStoreNewWithCFURL: returning 0x00000000
+DIResolveURLToBackingStore: processing level 1 encodings.
+DIFileEncodingNewWithBackingStore: entry for encoding level 1
+CBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage closeDataFork 1987
+diskimages-helper: fileNameLength          $000000AB
+diskimages-helper: resourceForkLength      $787C0E97
+diskimages-helper: dataForkLength          $8C2001F2
+diskimages-helper: commentLength           $0000E54D
+diskimages-helper: MacBinary III signature   \017÷Rx (0x0FF75278)
+diskimages-helper: header CRC              $00003C80
+diskimages-helper: minimum decoder version $00000072
+diskimages-helper: encoder version         $00000039
+no MacBinary III signature - checking for MacBinary I or IICBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage closeDataFork 1987
+CAppleSingleEncoding::isAppleSingleFile loadAppleSingleHeader failed with error 22
+CBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->openDataFork returned 0
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->getDataForkLength (stub header) returned 0
+[31mCEncryptedEncoding::copyHeaderInformation: backingStore data fork length is 0x00000000001014FC (1053948)
+[0mCEncryptedEncoding::copyHeaderInformation: reading V1 header from offset 0x0000000000101000 (1052672)
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->readDataFork (stub header) returned 0
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage closeDataFork 1987
+CBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage closeDataFork 1987
+diskimages-helper: DiskImages secure mode enabled
+UNLOCK: using specified passphrase.
+unlockCoreWithPasshrase: success
+UNLOCK: success!
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage setPermission 1726
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage setPermission 1734
+DIFileEncodingNewWithBackingStore: returning 0x00000000
+DIFileEncodingNewWithBackingStore: entry for encoding level 1
+CBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage closeDataFork 1987
+diskimages-helper: fileNameLength          $00000070
+diskimages-helper: resourceForkLength      $00000000
+diskimages-helper: dataForkLength          $00000000
+diskimages-helper: commentLength           $00000000
+diskimages-helper: MacBinary III signature        (0x00000000)
+diskimages-helper: header CRC              $00000000
+diskimages-helper: minimum decoder version $00000000
+diskimages-helper: encoder version         $00000000
+no MacBinary III signature - checking for MacBinary I or IICBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage closeDataFork 1987
+CAppleSingleEncoding::isAppleSingleFile loadAppleSingleHeader failed with error 22
+CBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->openDataFork returned 0
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->getDataForkLength (stub header) returned 0
+[31mCEncryptedEncoding::copyHeaderInformation: backingStore data fork length is 0x0000000000101000 (1052672)
+[0mCEncryptedEncoding::copyHeaderInformation: reading V1 header from offset 0x0000000000100B04 (1051396)
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->readDataFork (stub header) returned 0
+CEncryptedEncoding::copyHeaderInformation: not recognized as v1 header
+CEncryptedEncoding::copyHeaderInformation: reading V2 header from offset 0x0000000000000000 (0)
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->readDataFork (stub header) returned 0
+CEncryptedEncoding::copyHeaderInformation: not recognized as v2 header
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage closeDataFork 1987
+DIFileEncodingNewWithBackingStore: probe fails to find appropriate CFileEncoding class.
+DIFileEncodingNewWithBackingStore: returning 0x0000006B
+(continuing)
+DIResolveURLToBackingStore: processing level 2 encodings.
+DIFileEncodingNewWithBackingStore: entry for encoding level 2
+CBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage closeDataFork 1987
+CUDIFEncoding::newProbe: failing because backing store is not UDIF file
+DIFileEncodingNewWithBackingStore: probe fails to find appropriate CFileEncoding class.
+DIFileEncodingNewWithBackingStore: returning 0x0000006B
+(continuing)
+DIResolveURLToBackingStore: processing level 3 encodings.
+DIFileEncodingNewWithBackingStore: entry for encoding level 3
+checkTypeCreator:     /    
+checkTypeCreator: returning     , score 0
+CSegmentedNDIFEncoding::isSegmentedNDIFFile checkTypeCreator failed
+CSegmentedUDIFEncoding::isSegmentedUDIFFile backing store is not of type CUDIFEncoding
+DIFileEncodingNewWithBackingStore: probe fails to find appropriate CFileEncoding class.
+DIFileEncodingNewWithBackingStore: returning 0x0000006B
+(continuing)
+DIIsInitialized: returning YEScheckTypeCreator:     /    
+checkTypeCreator: returning     , score 0
+CNDIFDiskImage::newProbe: checkExtension gives score -1000.
+CUDIFDiskImage::checkBackingStoreType: backing store is wrong type
+checkBackingStoreType returned score 0 type     
+checkTypeCreator returned score 0 type     
+checkExtension returned score -1000 type     
+CRawDiskImage::newWithBackingStore: setBackingStore() failed. 107
+CRawDiskImage: checkBackingStoreLength score: -100
+CSparseBundleDiskImage::newProbe: returning 0
+DIBackingStore::inUse: checking our list looking for who's naughty and nice
+DIBackingStore::inUse: checking image 0000
+------XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+DIBackingStore::inUse: checking image 0001
+------XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+CBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+syncPhysicalAndLogicalForkLengths: returning 0 (cached logEOF: 1052672, physEOF: 1052672)
+DIDiskImageNewWithBackingStore: returning 0x00000000
+2008-01-23 12:54:48.913 diskimages-helper[1928:1603] DIHelperAttach: resolving shadow/section options
+2008-01-23 12:54:48.914 diskimages-helper[1928:1603] resolveShadowAndSectionOptions: returned 0
+2008-01-23 12:54:48.916 diskimages-helper[1928:1603] DIHelperAttach: checking in-use (1)
+DIBackingStore::inUse: checking our list looking for who's naughty and nice
+DIBackingStore::inUse: checking image 0000
+------XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+DIBackingStore::inUse: checking image 0001
+------XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:48.920 diskimages-helper[1928:1603] performInUseVerification: returned 0
+2008-01-23 12:54:48.921 diskimages-helper[1928:1603] DIHelperAttach: checking SLA
+CDiskImage::LPic2CFD: entry
+CDiskImage::LPic2CFD: got backing store
+CDiskImage::LPic2CFD: cleanup
+CDiskImage::LPic2CFD: returning 0x0
+2008-01-23 12:54:48.923 diskimages-helper[1928:1603] DIHelperAttach: checking checksum
+2008-01-23 12:54:48.925 diskimages-helper[1928:1603] performChecksumVerification: image has no checksum
+2008-01-23 12:54:48.927 diskimages-helper[1928:1603] performChecksumVerification: returned 0
+2008-01-23 12:54:48.929 diskimages-helper[1928:1603] DIHelperAttach: checking in-use (2)
+DIBackingStore::inUse: checking our list looking for who's naughty and nice
+DIBackingStore::inUse: checking image 0000
+------XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+DIBackingStore::inUse: checking image 0001
+------XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:48.932 diskimages-helper[1928:1603] performInUseVerification: returned 0
+2008-01-23 12:54:48.933 diskimages-helper[1928:1603] DIHelperAttach: setting up IDME
+2008-01-23 12:54:48.935 diskimages-helper[1928:1603] -[DIHelperHDID initWithDiskImage:]
+2008-01-23 12:54:48.937 diskimages-helper[1928:1603] DIHelperAttach: attaching disk image
+2008-01-23 12:54:48.938 diskimages-helper[1928:1603] performAttach: entry
+2008-01-23 12:54:48.940 diskimages-helper[1928:1603] setMountFlags: 0x00000003
+2008-01-23 12:54:48.941 diskimages-helper[1928:1603] 0x00000003
+2008-01-23 12:54:48.942 diskimages-helper[1928:1603] setMountFlags: 0x00000000
+2008-01-23 12:54:48.944 diskimages-helper[1928:1603] 0x00000000
+2008-01-23 12:54:48.945 diskimages-helper[1928:1603] performAttach: before performVolumeChecking, about to attachReturningDictionary
+2008-01-23 12:54:48.946 diskimages-helper[1928:1603] -attachReturningDictionary:
+2008-01-23 12:54:48.949 diskimages-helper[1928:1603] _diskAppearedCallback: disk2s1
+2008-01-23 12:54:48.950 diskimages-helper[1928:1603]               : (null) Apple_partition_map
+2008-01-23 12:54:48.954 diskimages-helper[1928:1603] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:48.956 diskimages-helper[1928:1603] _diskAppearedCallback: disk2s2
+2008-01-23 12:54:48.957 diskimages-helper[1928:1603]               : /Volumes/xxx
+2008-01-23 12:54:48.961 diskimages-helper[1928:1603] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:48.963 diskimages-helper[1928:1603] _diskAppearedCallback: disk2
+2008-01-23 12:54:48.964 diskimages-helper[1928:1603]               : (null) Apple_partition_scheme
+2008-01-23 12:54:48.967 diskimages-helper[1928:1603] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:48.969 diskimages-helper[1928:1603] _diskAppearedCallback: disk1
+2008-01-23 12:54:48.970 diskimages-helper[1928:1603]               : (null) Apple_partition_scheme
+2008-01-23 12:54:48.974 diskimages-helper[1928:1603] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:48.976 diskimages-helper[1928:1603] _diskAppearedCallback: disk1s2
+2008-01-23 12:54:48.977 diskimages-helper[1928:1603]               : /Users/xxx/Coding
+2008-01-23 12:54:48.981 diskimages-helper[1928:1603] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:48.983 diskimages-helper[1928:1603] _diskAppearedCallback: disk1s1
+2008-01-23 12:54:48.984 diskimages-helper[1928:1603]               : (null) Apple_partition_map
+2008-01-23 12:54:48.987 diskimages-helper[1928:1603] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:48.989 diskimages-helper[1928:1603] _diskAppearedCallback: disk0
+2008-01-23 12:54:48.990 diskimages-helper[1928:1603]               : (null) GUID_partition_scheme
+2008-01-23 12:54:48.994 diskimages-helper[1928:1603] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got (null)
+2008-01-23 12:54:48.996 diskimages-helper[1928:1603] _diskAppearedCallback: disk0s1
+2008-01-23 12:54:48.997 diskimages-helper[1928:1603]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.002 diskimages-helper[1928:1603] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got (null)
+2008-01-23 12:54:49.004 diskimages-helper[1928:1603] _diskAppearedCallback: disk0s2
+2008-01-23 12:54:49.005 diskimages-helper[1928:1603]               : / XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.008 diskimages-helper[1928:1603] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got (null)
+2008-01-23 12:54:49.010 diskimages-helper[1928:1603] _diskAppearedCallback: disk0s3
+2008-01-23 12:54:49.012 diskimages-helper[1928:1603]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.015 diskimages-helper[1928:1603] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got (null)
+2008-01-23 12:54:49.017 diskimages-helper[1928:1603] _diskAppearedCallback: disk0s4
+2008-01-23 12:54:49.018 diskimages-helper[1928:1603]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.022 diskimages-helper[1928:1603] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got (null)
+2008-01-23 12:54:49.026 diskimages-helper[1928:1603] _attachOutKernel: spawning off thread to serve image
+2008-01-23 12:54:49.027 diskimages-helper[1928:1603] -waitForDevEntriesToAppear: (DA version)
+2008-01-23 12:54:49.028 diskimages-helper[1928:2a2f] -serveImage: kicking off monitorThread ********************
+2008-01-23 12:54:49.029 diskimages-helper[1928:1603] _doneWaitingForDevEntries: entry
+2008-01-23 12:54:49.030 diskimages-helper[1928:2a2f] serveImage: entry
+2008-01-23 12:54:49.031 diskimages-helper[1928:1603]               : rootDiskIdentifier is NOT set
+2008-01-23 12:54:49.032 diskimages-helper[1928:2a2f] -incrementBackgroundThreadCount.
+2008-01-23 12:54:49.033 diskimages-helper[1928:1603]               : returning no
+2008-01-23 12:54:49.034 diskimages-helper[1928:4003] -incrementBackgroundThreadCount.
+2008-01-23 12:54:49.034 diskimages-helper[1928:2a2f] -incrementBackgroundThreadCount: _backgroundThreadCount is now 2.
+2008-01-23 12:54:49.036 diskimages-helper[1928:2a2f] -serveImage: attaching drive
+{
+    autodiskmount = 1;
+    "hdiagent-drive-identifier" = "245F00CA-603B-4EBB-846F-AF972550D93D";
+    "unmount-timeout" = 0;
+}
+DIIsInitialized: returning YESqtn_file_alloc returned 0x818e00
+CDiskImage::createUniqueIDDict: creating array from backing store identifier.
+2008-01-23 12:54:49.036 diskimages-helper[1928:4003] -incrementBackgroundThreadCount: _backgroundThreadCount is now 3.
+2008-01-23 12:54:49.047 diskimages-helper[1928:2a2f] -serveImage: connecting to myDrive 0x00004613
+2008-01-23 12:54:49.047 diskimages-helper[1928:4003] -_handleMonitorThread entry
+2008-01-23 12:54:49.048 diskimages-helper[1928:2a2f] -serveImage: register _readBuffer 0x0x445000 with myDrive 0x0x0
+2008-01-23 12:54:49.049 diskimages-helper[1928:2a2f] -serveImage: activating drive port 0x0x4707
+2008-01-23 12:54:49.134 diskimages-helper[1928:1603] _doneWaitingForDevEntries: entry
+2008-01-23 12:54:49.137 diskimages-helper[1928:1603]               : rootDiskIdentifier is NOT set
+2008-01-23 12:54:49.138 diskimages-helper[1928:1603]               : returning no
+2008-01-23 12:54:49.239 diskimages-helper[1928:1603] _doneWaitingForDevEntries: entry
+2008-01-23 12:54:49.240 diskimages-helper[1928:1603]               : rootDiskIdentifier is NOT set
+2008-01-23 12:54:49.240 diskimages-helper[1928:1603]               : returning no
+2008-01-23 12:54:49.341 diskimages-helper[1928:1603] _doneWaitingForDevEntries: entry
+2008-01-23 12:54:49.344 diskimages-helper[1928:1603]               : rootDiskIdentifier is NOT set
+2008-01-23 12:54:49.611 diskimages-helper[1928:1603]               : returning no
+2008-01-23 12:54:49.662 diskimages-helper[1928:1603] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.673 diskimages-helper[1928:1603] _diskPeekCallback: peek received for disk3
+2008-01-23 12:54:49.676 diskimages-helper[1928:1603] _diskPeekCallback: found rootDiskIdentifier to be disk3
+2008-01-23 12:54:49.676 diskimages-helper[1928:1603] _diskPeekCallback: caching automatic mount=YES for disk3
+2008-01-23 12:54:49.677 diskimages-helper[1928:1603]    setting kDADiskOptionsMountAutomatic to FALSE
+2008-01-23 12:54:49.695 diskimages-helper[1928:4003] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.695 diskimages-helper[1928:1603] _doneWaitingForDevEntries: entry
+2008-01-23 12:54:49.726 diskimages-helper[1928:4003] _diskPeekCallback: peek received for disk3s1
+2008-01-23 12:54:49.726 diskimages-helper[1928:1603]               : got root disk identifier disk3
+2008-01-23 12:54:49.726 diskimages-helper[1928:4003] _diskPeekCallback: caching automatic mount=YES for disk3s1
+2008-01-23 12:54:49.727 diskimages-helper[1928:1603]               : peek array not empty (
+    disk3
+)
+2008-01-23 12:54:49.727 diskimages-helper[1928:4003]    setting kDADiskOptionsMountAutomatic to FALSE
+2008-01-23 12:54:49.727 diskimages-helper[1928:1603]               : peek count 1 does NOT equal diskAppeared count 0
+2008-01-23 12:54:49.728 diskimages-helper[1928:4003] _diskAppearedCallback: disk3
+2008-01-23 12:54:49.728 diskimages-helper[1928:1603]               : returning no
+2008-01-23 12:54:49.744 diskimages-helper[1928:4003]               : (null) GUID_partition_scheme
+2008-01-23 12:54:49.747 diskimages-helper[1928:4003] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.749 diskimages-helper[1928:4003] diskAppearedCallback: found rootDiskIdentifier to be disk3
+2008-01-23 12:54:49.750 diskimages-helper[1928:4003] diskAppearedCalback: invalidating timers since peek is done - fsck could take a long time so we stop the timers
+2008-01-23 12:54:49.750 diskimages-helper[1928:1603] _diskAppearedCallback: disk3s1
+2008-01-23 12:54:49.751 diskimages-helper[1928:1603]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.753 diskimages-helper[1928:1603] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.753 diskimages-helper[1928:1603] _doneWaitingForDevEntries: entry
+2008-01-23 12:54:49.754 diskimages-helper[1928:1603]               : got root disk identifier disk3
+2008-01-23 12:54:49.754 diskimages-helper[1928:1603]               : peek array not empty (
+    disk3,
+    disk3s1
+)
+2008-01-23 12:54:49.754 diskimages-helper[1928:1603]               : peek count equals diskAppeared count 2
+2008-01-23 12:54:49.757 diskimages-helper[1928:1603]               : root IOMedia object not busy
+2008-01-23 12:54:49.757 diskimages-helper[1928:1603] countIOMediaObjectsFrom returned 2
+2008-01-23 12:54:49.757 diskimages-helper[1928:1603]               : IOMedia count equals peek array count 2
+2008-01-23 12:54:49.758 diskimages-helper[1928:1603]               : returning YES
+2008-01-23 12:54:49.759 diskimages-helper[1928:1603] -waitForDevEntriesToAppear: found: (
+    disk3,
+    disk3s1
+)
+2008-01-23 12:54:49.760 diskimages-helper[1928:1603] buildReturnDictionary:
+2008-01-23 12:54:49.761 diskimages-helper[1928:1603] adding (disk3): {
+    "content-hint" = "GUID_partition_scheme";
+    "dev-entry" = "/dev/disk3";
+    "potentially-mountable" = 0;
+    "unmapped-content-hint" = "GUID_partition_scheme";
+}
+2008-01-23 12:54:49.761 diskimages-helper[1928:1603] adding (disk3s1): {
+    "content-hint" = "Apple_HFS";
+    "dev-entry" = "/dev/disk3s1";
+    "potentially-mountable" = 0;
+    "unmapped-content-hint" = "48465300-0000-11AA-AA11-00306543ECAC";
+}
+2008-01-23 12:54:49.762 diskimages-helper[1928:1603] -attachReturningDictionary: _buildReturnDictionary returned 0
+2008-01-23 12:54:49.762 diskimages-helper[1928:1603] -attachReturningDictionary: kicked off hdiejectd
+2008-01-23 12:54:49.763 diskimages-helper[1928:1603] performAttach: attachReturningDictionary returned 0
+{
+    "system-entities" =     (
+                {
+            "content-hint" = "GUID_partition_scheme";
+            "dev-entry" = "/dev/disk3";
+            "potentially-mountable" = 0;
+            "unmapped-content-hint" = "GUID_partition_scheme";
+        },
+                {
+            "content-hint" = "Apple_HFS";
+            "dev-entry" = "/dev/disk3s1";
+            "potentially-mountable" = 0;
+            "unmapped-content-hint" = "48465300-0000-11AA-AA11-00306543ECAC";
+        }
+    );
+}
+2008-01-23 12:54:49.763 diskimages-helper[1928:1603] performAttach: about to performVolumeChecking
+2008-01-23 12:54:49.765 diskimages-helper[1928:1603] performVolumeChecking: entry
+2008-01-23 12:54:49.766 diskimages-helper[1928:1603] _cachedFsckDataFor: entry
+2008-01-23 12:54:49.766 diskimages-helper[1928:1603] _cachedFsckDataFor: getxattr failed 93
+2008-01-23 12:54:49.767 diskimages-helper[1928:1603] _cachedFsckDataFor: returning (null)
+2008-01-23 12:54:49.767 diskimages-helper[1928:1603] _needToAutoFsck: returning YES
+2008-01-23 12:54:49.767 diskimages-helper[1928:1603] performVolumeChecking: nothing to auto-fsck
+2008-01-23 12:54:49.768 diskimages-helper[1928:1603] performAttach: performVolumeChecking returned 0
+2008-01-23 12:54:49.769 diskimages-helper[1928:1603] setMountFlags: 0x00000003
+2008-01-23 12:54:49.769 diskimages-helper[1928:1603] 0x00000003
+2008-01-23 12:54:49.770 diskimages-helper[1928:1603] -remountReturningDictionary:
+2008-01-23 12:54:49.771 diskimages-helper[1928:4003] _diskAppearedCallback: disk3
+2008-01-23 12:54:49.772 diskimages-helper[1928:4003]               : (null) GUID_partition_scheme
+2008-01-23 12:54:49.774 diskimages-helper[1928:4003] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.777 diskimages-helper[1928:4003] diskAppearedCallback: found rootDiskIdentifier to be disk3
+2008-01-23 12:54:49.778 diskimages-helper[1928:4003] diskAppearedCalback: invalidating timers since peek is done - fsck could take a long time so we stop the timers
+2008-01-23 12:54:49.778 diskimages-helper[1928:4003] _diskAppearedCallback: disk3s1
+2008-01-23 12:54:49.778 diskimages-helper[1928:4003]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.781 diskimages-helper[1928:4003] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.782 diskimages-helper[1928:4003] _diskAppearedCallback: disk2s1
+2008-01-23 12:54:49.782 diskimages-helper[1928:4003]               : (null) Apple_partition_map
+2008-01-23 12:54:49.784 diskimages-helper[1928:4003] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.785 diskimages-helper[1928:4003] _diskAppearedCallback: disk2s2
+2008-01-23 12:54:49.785 diskimages-helper[1928:4003]               : /Volumes/xxx
+2008-01-23 12:54:49.788 diskimages-helper[1928:4003] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.788 diskimages-helper[1928:4003] _diskAppearedCallback: disk2
+2008-01-23 12:54:49.789 diskimages-helper[1928:4003]               : (null) Apple_partition_scheme
+2008-01-23 12:54:49.791 diskimages-helper[1928:4003] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.792 diskimages-helper[1928:4003] _diskAppearedCallback: disk1
+2008-01-23 12:54:49.792 diskimages-helper[1928:4003]               : (null) Apple_partition_scheme
+2008-01-23 12:54:49.795 diskimages-helper[1928:4003] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.796 diskimages-helper[1928:4003] _diskAppearedCallback: disk1s2
+2008-01-23 12:54:49.796 diskimages-helper[1928:4003]               : /Users/xxx/Coding
+2008-01-23 12:54:49.799 diskimages-helper[1928:4003] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.799 diskimages-helper[1928:4003] _diskAppearedCallback: disk1s1
+2008-01-23 12:54:49.800 diskimages-helper[1928:4003]               : (null) Apple_partition_map
+2008-01-23 12:54:49.802 diskimages-helper[1928:4003] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.803 diskimages-helper[1928:4003] _diskAppearedCallback: disk0
+2008-01-23 12:54:49.803 diskimages-helper[1928:4003]               : (null) GUID_partition_scheme
+2008-01-23 12:54:49.806 diskimages-helper[1928:4003] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got (null)
+2008-01-23 12:54:49.807 diskimages-helper[1928:4003] _diskAppearedCallback: disk0s1
+2008-01-23 12:54:49.807 diskimages-helper[1928:4003]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.810 diskimages-helper[1928:4003] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got (null)
+2008-01-23 12:54:49.810 diskimages-helper[1928:4003] _diskAppearedCallback: disk0s2
+2008-01-23 12:54:49.811 diskimages-helper[1928:4003]               : / XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.813 diskimages-helper[1928:4003] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got (null)
+2008-01-23 12:54:49.814 diskimages-helper[1928:4003] _diskAppearedCallback: disk0s3
+2008-01-23 12:54:49.814 diskimages-helper[1928:4003]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.817 diskimages-helper[1928:4003] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got (null)
+2008-01-23 12:54:49.817 diskimages-helper[1928:4003] _diskAppearedCallback: disk0s4
+2008-01-23 12:54:49.818 diskimages-helper[1928:4003]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:54:49.821 diskimages-helper[1928:1603] mountDevEntries: (DiskArb version)
+2008-01-23 12:54:49.822 diskimages-helper[1928:1603] disk3
+2008-01-23 12:54:49.822 diskimages-helper[1928:4003] looking for UUID 245F00CA-603B-4EBB-846F-AF972550D93D, got (null)
+2008-01-23 12:54:49.825 diskimages-helper[1928:1603] >> {
+    DAAppearanceTime = 222782089.645024;
+    DABusName = "/";
+    DABusPath = "IODeviceTree:/";
+    DADeviceModel = "Disk Image";
+    DADevicePath = "IOService:/IOResources/IOHDIXController/IOHDIXHDDriveOutKernel/IODiskImageBlockStorageDeviceOutKernel";
+    DADeviceProtocol = "Virtual Interface";
+    DADeviceRevision = "10.5v192.1";
+    DADeviceUnit = 62;
+    DADeviceVendor = Apple;
+    DAMediaBSDMajor = 14;
+    DAMediaBSDMinor = 11;
+    DAMediaBSDName = disk3;
+    DAMediaBSDUnit = 3;
+    DAMediaBlockSize = 512;
+    DAMediaContent = "GUID_partition_scheme";
+    DAMediaEjectable = 1;
+    DAMediaIcon =     {
+        CFBundleIdentifier = "com.apple.iokit.IOStorageFamily";
+        IOBundleResourceFile = "Removable.icns";
+    };
+    DAMediaKind = IOMedia;
+    DAMediaLeaf = 0;
+    DAMediaName = "Apple sparse disk image Media";
+    DAMediaPath = "IOService:/IOResources/IOHDIXController/IOHDIXHDDriveOutKernel/IODiskImageBlockStorageDeviceOutKernel/IOBlockStorageDriver/Apple sparse disk image Media";
+    DAMediaRemovable = 1;
+    DAMediaSize = 65536;
+    DAMediaWhole = 1;
+    DAMediaWritable = 1;
+    DAVolumeMountable = 0;
+    DAVolumeNetwork = 0;
+} << 
+2008-01-23 12:54:49.826 diskimages-helper[1928:1603] disk3s1
+2008-01-23 12:54:49.826 diskimages-helper[1928:1603] >> {
+    DAAppearanceTime = 222782089.643875;
+    DABusName = "/";
+    DABusPath = "IODeviceTree:/";
+    DADeviceModel = "Disk Image";
+    DADevicePath = "IOService:/IOResources/IOHDIXController/IOHDIXHDDriveOutKernel/IODiskImageBlockStorageDeviceOutKernel";
+    DADeviceProtocol = "Virtual Interface";
+    DADeviceRevision = "10.5v192.1";
+    DADeviceUnit = 62;
+    DADeviceVendor = Apple;
+    DAMediaBSDMajor = 14;
+    DAMediaBSDMinor = 12;
+    DAMediaBSDName = disk3s1;
+    DAMediaBSDUnit = 3;
+    DAMediaBlockSize = 512;
+    DAMediaContent = "48465300-0000-11AA-AA11-00306543ECAC";
+    DAMediaEjectable = 1;
+    DAMediaIcon =     {
+        CFBundleIdentifier = "com.apple.iokit.IOStorageFamily";
+        IOBundleResourceFile = "Removable.icns";
+    };
+    DAMediaKind = IOMedia;
+    DAMediaLeaf = 1;
+    DAMediaName = "disk image";
+    DAMediaPath = "IOService:/IOResources/IOHDIXController/IOHDIXHDDriveOutKernel/IODiskImageBlockStorageDeviceOutKernel/IOBlockStorageDriver/Apple sparse disk image Media/IOGUIDPartitionScheme/disk image@1";
+    DAMediaRemovable = 1;
+    DAMediaSize = 24576;
+    DAMediaUUID = <NSCFType: 0x544b20>;
+    DAMediaWhole = 0;
+    DAMediaWritable = 1;
+    DAVolumeMountable = 0;
+    DAVolumeNetwork = 0;
+} << 
+2008-01-23 12:54:49.827 diskimages-helper[1928:1603] -remountReturningDictionary: _remountDevEntries returned 109
+2008-01-23 12:54:49.827 diskimages-helper[1928:1603] buildReturnDictionary:
+2008-01-23 12:54:49.828 diskimages-helper[1928:1603] adding (disk3): {
+    "content-hint" = "GUID_partition_scheme";
+    "dev-entry" = "/dev/disk3";
+    "potentially-mountable" = 0;
+    "unmapped-content-hint" = "GUID_partition_scheme";
+}
+2008-01-23 12:54:49.828 diskimages-helper[1928:1603] adding (disk3s1): {
+    "content-hint" = "Apple_HFS";
+    "dev-entry" = "/dev/disk3s1";
+    "potentially-mountable" = 0;
+    "unmapped-content-hint" = "48465300-0000-11AA-AA11-00306543ECAC";
+}
+2008-01-23 12:54:49.829 diskimages-helper[1928:1603] -remountReturningDictionary: _buildReturnDictionary returned 109
+2008-01-23 12:54:49.829 diskimages-helper[1928:1603] -remountReturningDictionary: detaching because no mountable filesystems.
+2008-01-23 12:54:49.829 diskimages-helper[1928:1603] -unmountAndDetachWithForce:YES andTryManualDetach:NO
+2008-01-23 12:54:49.830 diskimages-helper[1928:1603] -unmountAndDetachWithForce: using disk3
+2008-01-23 12:54:49.834 diskimages-helper[1928:1603] -unmountAndDetachWithForce: unmount returned 0
+diskimages-helper: DI_kextDriveGetRequest returned 0x00000025 (37) ((os/kern) object terminated).
+2008-01-23 12:54:49.841 diskimages-helper[1928:2a2f] -serveImage: ALL DONE SERVING THE IMAGE (0)
+2008-01-23 12:54:49.843 diskimages-helper[1928:2a2f] -decrementBackgroundThreadCount: entry with error 0.
+2008-01-23 12:54:49.844 diskimages-helper[1928:2a2f] -decrementBackgroundThreadCount: _backgroundThreadCount is now 2.
+2008-01-23 12:54:49.845 diskimages-helper[1928:1603] -unmountAndDetachWithForce: eject returned 0
+2008-01-23 12:54:49.846 diskimages-helper[1928:1603] performAttach: remountReturningDictionary returned 109
+(null)
+2008-01-23 12:54:49.847 diskimages-helper[1928:1603] performAttach: returned 109
+syncPhysicalAndLogicalForkLengths: entry (cached logEOF: 1052672, physEOF: 1052672)
+                                 : returning 0 (new cached logEOF: 1052672, physEOF: 1052672)
+2008-01-23 12:54:49.926 diskimages-helper[1928:4003] -_handleMonitorThread exit
+2008-01-23 12:54:49.927 diskimages-helper[1928:4003] -decrementBackgroundThreadCount: _backgroundThreadCount is now 1.
+2008-01-23 12:54:49.928 diskimages-helper[1928:4003] -[DIHelperHDID dealloc:]
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v1.sparseimage closeDataFork 1987
+2008-01-23 12:54:50.485 diskimages-helper[1928:1603] DIHelperAttach performOperation: returning 109
+2008-01-23 12:54:50.486 diskimages-helper[1928:1603] -decrementBackgroundThreadCount: _backgroundThreadCount is now 0.
+2008-01-23 12:54:50.488 diskimages-helper[1928:10b] DIHelper _report_results: reporting {
+    payload =     {
+    };
+    "result-code" = 109;
+}
+2008-01-23 12:54:50.488 hdiutil[1926:1c03] reportResultsToFramework: proxy has finished operation
+2008-01-23 12:54:50.489 hdiutil[1926:1c03] reportResultsToFramework: results are: {
+    payload =     {
+    };
+    "result-code" = 109;
+}
+2008-01-23 12:54:50.490 hdiutil[1926:1c03] reportResultsToFramework: _threadResultsError is 109
+2008-01-23 12:54:50.490 hdiutil[1926:1c03] reportResultsToFramework: disconnecting from helper.
+2008-01-23 12:54:50.591 hdiutil[1926:1c03] disconnectFromHelper: removing observers
+2008-01-23 12:54:50.592 hdiutil[1926:1c03] disconnectFromHelper: terminating proxy
+2008-01-23 12:54:50.594 diskimages-helper[1928:10b] DIHelper: terminateHelper: entry.
+2008-01-23 12:54:50.596 hdiutil[1926:1c03] disconnectFromHelper: terminated proxy
+2008-01-23 12:54:50.696 diskimages-helper[1928:10b] -DIHelperAgentMaster terminateUIAgentConnection.
+2008-01-23 12:54:50.701 diskimages-helper[1928:10b] DIHelper dealloc.
+2008-01-23 12:54:50.702 diskimages-helper[1928:10b] -DIHelperAgentMaster terminateUIAgentConnection.
+hdiutil: attach failed - no mountable file systems

@@ -1,0 +1,1302 @@
+hdiutil: WARNING: -passphrase has been deprecated in favor of -stdinpass
+2008-01-23 12:54:58.217 hdiutil[1961:1c03] using helper tool at "/System/Library/PrivateFrameworks/DiskImages.framework/Resources/diskimages-helper".
+2008-01-23 12:54:58.247 hdiutil[1961:1c03] connectToFramework
+2008-01-23 12:54:58.348 hdiutil[1961:1c03] sendOperationToHelper: about to ask proxy to start operation
+2008-01-23 12:54:58.362 diskimages-helper[1963:1603] _imageOptions: {
+    "enable-keychain" = 1;
+    passphrase = vilefault;
+}
+2008-01-23 12:54:58.363 diskimages-helper[1963:1603] _driveOptions: {
+    autodiskmount = 1;
+    "unmount-timeout" = 0;
+}
+2008-01-23 12:54:58.363 diskimages-helper[1963:1603] DIHelperAttach: initializing framework
+DILoadDriver: checking for disk image driver...DILoadDriver: DI_kextExists() returned 0x00000000 (0)...DIIsInitialized: returning NO2008-01-23 12:54:58.372 diskimages-helper[1963:1603] -checkForPreviouslyAttachedImage: entry
+2008-01-23 12:54:58.373 diskimages-helper[1963:1603] 
+
+
+file://localhost/Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/ - (null) ((null), (null)). perm=0
+DIIsInitialized: returning YESCBundleBackingStore::newProbe: got bundle
+CDevBackingStore::newProbe: not /dev/disk or /dev/rdisk (/Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle).CCURLBackingStore::probe: not recognized URL scheme.
+CVectoredBackingStore::newProbe not "vectored" scheme.
+CBundleBackingStore::newWithCFURLandToken: perm is 0
+DIIsInitialized: returning YESCCarbonBackingStore::newProbe: setting initial rval to +100
+CDevBackingStore::newProbe: not /dev/disk or /dev/rdisk (/Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token).CCURLBackingStore::probe: not recognized URL scheme.
+CVectoredBackingStore::newProbe not "vectored" scheme.
+DIBackingStoreNewWithCFURL: instantiator returned 0
+DIBackingStoreNewWithCFURL: returning 0x00000000
+CBundleBackingStore::setURL entry
+CBundleBackingStore::setURL CFURLStat passed
+CBundleBackingStore::setURL fPath is /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle
+CBundleBackingStore::setURL got unique identifier
+CBundleBackingStore::newWithCFURLandToken: setURL returned 0
+CBundleBackingStore::setSecurityToken entry
+CBundleBackingStore::newWithCFURLandToken: setSecurityToken returned 0
+copyInfoPlist: fcntl(F_OPENFROM, Info.plist) passed
+copyInfoPlist: read 492 bytes
+copyInfoPlist: total read 492 bytes
+CBundleBackingStore::processBundle: getting kDIBackingStoreSizeKey
+CBundleBackingStore::processBundle: dfLength 65536
+CBundleBackingStore::processBundle: getting kDIBackingStoreBandSizeKey
+CBundleBackingStore::processBundle: _bytesPerBand 8388608
+CBundleBackingStore::newWithCFURLandToken: processBundle returned 0
+processOptions: _bandTableSize is 6 entries
+processOptions: _bandTableCloseOnSleep is no
+processOptions: _bandTableCloseOnIdle is no
+processOptions: _bandTableCloseOnFlush is no
+processOptions: _bandTable initialized
+CBundleBackingStore::newWithCFURLandToken: setPermission returned 0
+CBundleBackingStore::newWithCFURLandToken: returning 0
+DIBackingStoreNewWithCFURL: instantiator returned 0
+DIBackingStoreNewWithCFURL: returning 0x00000000
+2008-01-23 12:54:58.376 diskimages-helper[1963:1603] -checkForPreviouslyAttachedImage: resolving file://localhost/Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/ returned 0
+2008-01-23 12:54:58.376 diskimages-helper[1963:1603] -checkForPreviouslyAttachedImage: imageUID (
+    "d234881030:i7328829"
+) shadowUID (null)
+2008-01-23 12:54:58.382 diskimages-helper[1963:1603] DIHelperAttach: resolving disk image
+DIIsInitialized: returning YESDIIsInitialized: returning YESCBundleBackingStore::newProbe: got bundle
+CDevBackingStore::newProbe: not /dev/disk or /dev/rdisk (/Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle).CCURLBackingStore::probe: not recognized URL scheme.
+CVectoredBackingStore::newProbe not "vectored" scheme.
+CBundleBackingStore::newWithCFURLandToken: perm is 0
+DIIsInitialized: returning YESCCarbonBackingStore::newProbe: setting initial rval to +100
+CDevBackingStore::newProbe: not /dev/disk or /dev/rdisk (/Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token).CCURLBackingStore::probe: not recognized URL scheme.
+CVectoredBackingStore::newProbe not "vectored" scheme.
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token setPermission 1726
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token setPermission 1734
+DIBackingStoreNewWithCFURL: instantiator returned 0
+DIBackingStoreNewWithCFURL: returning 0x00000000
+DIResolveURLToBackingStore: processing level 1 encodings.
+DIFileEncodingNewWithBackingStore: entry for encoding level 1
+CBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token closeDataFork 1987
+diskimages-helper: fileNameLength          $0000006E
+diskimages-helper: resourceForkLength      $60000000
+diskimages-helper: dataForkLength          $00000000
+diskimages-helper: commentLength           $00006700
+diskimages-helper: MacBinary III signature        (0x00000000)
+diskimages-helper: header CRC              $00006CB7
+diskimages-helper: minimum decoder version $0000004A
+diskimages-helper: encoder version         $00000079
+no MacBinary III signature - checking for MacBinary I or IICBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token closeDataFork 1987
+CAppleSingleEncoding::isAppleSingleFile loadAppleSingleHeader failed with error 22
+CBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->openDataFork returned 0
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->getDataForkLength (stub header) returned 0
+[31mCEncryptedEncoding::copyHeaderInformation: backingStore data fork length is 0x000000000001E000 (122880)
+[0mCEncryptedEncoding::copyHeaderInformation: reading V1 header from offset 0x000000000001DB04 (121604)
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->readDataFork (stub header) returned 0
+CEncryptedEncoding::copyHeaderInformation: not recognized as v1 header
+CEncryptedEncoding::copyHeaderInformation: reading V2 header from offset 0x0000000000000000 (0)
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->readDataFork (stub header) returned 0
+CEncryptedEncoding::copyHeaderInformation: reading auth-entry count from offset 0x0000000000000048 (72)
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->readDataFork (auth entry count) returned 0
+CEncryptedEncoding::copyHeaderInformation: reading auth table from offset 0x0000000000000048 (72)
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->readDataFork (auth entry count) returned 0
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token closeDataFork 1987
+CBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token closeDataFork 1987
+CBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token closeDataFork 1987
+diskimages-helper: DiskImages secure mode enabled
+CEncryptedEncoding:unclock_CAN_THROW: trying to unlock with passphrase
+UNLOCK: using specified passphrase.
+unlockCoreWithPasshrase: success
+UNLOCK: success!
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token setPermission 1726
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token setPermission 1734
+DIFileEncodingNewWithBackingStore: returning 0x00000000
+DIFileEncodingNewWithBackingStore: entry for encoding level 1
+CBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token closeDataFork 1987
+CBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token closeDataFork 1987
+CAppleSingleEncoding::isAppleSingleFile loadAppleSingleHeader failed with error 29
+CBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->openDataFork returned 0
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->getDataForkLength (stub header) returned 0
+[31mCEncryptedEncoding::copyHeaderInformation: backingStore data fork length is 0x0000000000000000 (0)
+[0mCEncryptedEncoding::copyHeaderInformation: reading V1 header from offset 0xFFFFFFFFFFFFFB04 (-1276)
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->readDataFork (stub header) returned 22
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token closeDataFork 1987
+DIFileEncodingNewWithBackingStore: probe fails to find appropriate CFileEncoding class.
+DIFileEncodingNewWithBackingStore: returning 0x0000006B
+(continuing)
+CBSDBackingStore::openDataFork: about to open /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token
+opening /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token openDataFork 1907
+CBSDBackingStore::OpenLockFriendly: mapping flags 0x00000002 -> 0x00000026 (locks are MANDATORY)
+(RW lock acquired)
+CBundleBackingStore::setURL entry
+CBundleBackingStore::setURL CFURLStat passed
+CBundleBackingStore::setURL fPath is /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle
+CBundleBackingStore::setURL got unique identifier
+CBundleBackingStore::newWithCFURLandToken: setURL returned 0
+CBundleBackingStore::setSecurityToken entry
+CBundleBackingStore::newWithCFURLandToken: setSecurityToken returned 0
+copyInfoPlist: fcntl(F_OPENFROM, Info.plist) passed
+copyInfoPlist: read 492 bytes
+copyInfoPlist: total read 492 bytes
+CBundleBackingStore::processBundle: getting kDIBackingStoreSizeKey
+CBundleBackingStore::processBundle: dfLength 65536
+CBundleBackingStore::processBundle: getting kDIBackingStoreBandSizeKey
+CBundleBackingStore::processBundle: _bytesPerBand 8388608
+CBundleBackingStore::newWithCFURLandToken: processBundle returned 0
+processOptions: _bandTableSize is 6 entries
+processOptions: _bandTableCloseOnSleep is no
+processOptions: _bandTableCloseOnIdle is no
+processOptions: _bandTableCloseOnFlush is no
+processOptions: _bandTable initialized
+CBundleBackingStore::newWithCFURLandToken: setPermission returned 0
+CBundleBackingStore::newWithCFURLandToken: returning 0
+DIBackingStoreNewWithCFURL: instantiator returned 0
+DIBackingStoreNewWithCFURL: returning 0x00000000
+DIResolveURLToBackingStore: processing level 1 encodings.
+DIFileEncodingNewWithBackingStore: entry for encoding level 1
+CBundleBackingStore::openDataFork: open for the first time
+CBundleBackingStore::openDataFork: returning 0
+CBundleBackingStore::readDataFork: ENTRY 128 at 0 into 0xb0080abc
+                     ::readDataFork: band 0, 128 at 0
+CBundleBackingStore::getBandEntry: NOT FOUND: band sector=0 not active
+CBundleBackingStore::bandPath: returning bands/0
+CBundleBackingStore::getBandEntry: calling f_openfrom(bands/0) with flags 0x000001b6
+CBundleBackingStore::getBandEntry: acquired RW lock
+CBundleBackingStore::getBandEntry: checking for chown/chmod
+CBundleBackingStore::getBandEntry: current perm 501,20 100644
+CBundleBackingStore::getBandEntry: bundle  perm 501,20 40755
+CBundleBackingStore::getBandEntry: getting flags returned 0
+CBundleBackingStore::getBandEntry: setting flags(not io-thread) returned 0
+CBundleBackingStore::getBandEntry: using pFreeEntry 0x52cc00
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 128 at 0 from band 0 into 0xb0080abc
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 0 currentPtr 0xb0080abc
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 128 from 0x810a00 to 0xb0080abc
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (128 bytes processed)
+CBundleBackingStore::releaseBand: closing fd=5, sector=0
+CBundleBackingStore::releaseBands: releaseBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::releaseBands: flushBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::releaseBands: releaseBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::closeDataFork: releaseBands returned 0
+CBundleBackingStore::closeDataFork: returning 0
+diskimages-helper: fileNameLength          $00000000
+diskimages-helper: resourceForkLength      $00000000
+diskimages-helper: dataForkLength          $00000000
+diskimages-helper: commentLength           $00000000
+diskimages-helper: MacBinary III signature        (0x00000000)
+diskimages-helper: header CRC              $00000000
+diskimages-helper: minimum decoder version $00000000
+diskimages-helper: encoder version         $00000000
+no MacBinary III signature - checking for MacBinary I or IIcalculated CRC          $00000000MacBinary II foundfinal sanity checkERROR kFileNameLength <= 0failed final sanity check...CBundleBackingStore::openDataFork: open for the first time
+CBundleBackingStore::openDataFork: returning 0
+CBundleBackingStore::readDataFork: ENTRY 38 at 0 into 0xb0080ad6
+                     ::readDataFork: band 0, 38 at 0
+CBundleBackingStore::getBandEntry: NOT FOUND: band sector=0 not active
+CBundleBackingStore::bandPath: returning bands/0
+CBundleBackingStore::getBandEntry: calling f_openfrom(bands/0) with flags 0x000001b6
+CBundleBackingStore::getBandEntry: acquired RW lock
+CBundleBackingStore::getBandEntry: checking for chown/chmod
+CBundleBackingStore::getBandEntry: current perm 501,20 100644
+CBundleBackingStore::getBandEntry: bundle  perm 501,20 40755
+CBundleBackingStore::getBandEntry: getting flags returned 0
+CBundleBackingStore::getBandEntry: setting flags(not io-thread) returned 0
+CBundleBackingStore::getBandEntry: using pFreeEntry 0x52cc00
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 38 at 0 from band 0 into 0xb0080ad6
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 0 currentPtr 0xb0080ad6
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 38 from 0x810a00 to 0xb0080ad6
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (38 bytes processed)
+CBundleBackingStore::releaseBand: closing fd=5, sector=0
+CBundleBackingStore::releaseBands: releaseBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::releaseBands: flushBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::releaseBands: releaseBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::closeDataFork: releaseBands returned 0
+CBundleBackingStore::closeDataFork: returning 0
+CAppleSingleEncoding::isAppleSingleFile loadAppleSingleHeader failed with error 22
+CBundleBackingStore::openDataFork: open for the first time
+CBundleBackingStore::openDataFork: returning 0
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->openDataFork returned 0
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->getDataForkLength (stub header) returned 0
+[31mCEncryptedEncoding::copyHeaderInformation: backingStore data fork length is 0x0000000000010000 (65536)
+[0mCEncryptedEncoding::copyHeaderInformation: reading V1 header from offset 0x000000000000FB04 (64260)
+CBundleBackingStore::readDataFork: ENTRY 1276 at 64260 into 0xb0080358
+                     ::readDataFork: band 0, 1276 at 64260
+CBundleBackingStore::getBandEntry: NOT FOUND: band sector=0 not active
+CBundleBackingStore::bandPath: returning bands/0
+CBundleBackingStore::getBandEntry: calling f_openfrom(bands/0) with flags 0x000001b6
+CBundleBackingStore::getBandEntry: acquired RW lock
+CBundleBackingStore::getBandEntry: checking for chown/chmod
+CBundleBackingStore::getBandEntry: current perm 501,20 100644
+CBundleBackingStore::getBandEntry: bundle  perm 501,20 40755
+CBundleBackingStore::getBandEntry: getting flags returned 0
+CBundleBackingStore::getBandEntry: setting flags(not io-thread) returned 0
+CBundleBackingStore::getBandEntry: using pFreeEntry 0x52cc00
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 1276 at 64260 from band 0 into 0xb0080358
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 64260 currentPtr 0xb0080358
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 61440 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 1276 from 0x811504 to 0xb0080358
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (1276 bytes processed)
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->readDataFork (stub header) returned 0
+CEncryptedEncoding::copyHeaderInformation: not recognized as v1 header
+CEncryptedEncoding::copyHeaderInformation: reading V2 header from offset 0x0000000000000000 (0)
+CBundleBackingStore::readDataFork: ENTRY 72 at 0 into 0xb0080a88
+                     ::readDataFork: band 0, 72 at 0
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 72 at 0 from band 0 into 0xb0080a88
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 0 currentPtr 0xb0080a88
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 72 from 0x810a00 to 0xb0080a88
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (72 bytes processed)
+CEncryptedEncoding::copyHeaderInformation: inBackingStore->readDataFork (stub header) returned 0
+CEncryptedEncoding::copyHeaderInformation: not recognized as v2 header
+CBundleBackingStore::releaseBand: closing fd=5, sector=0
+CBundleBackingStore::releaseBands: releaseBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::releaseBands: flushBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::releaseBands: releaseBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::closeDataFork: releaseBands returned 0
+CBundleBackingStore::closeDataFork: returning 0
+DIFileEncodingNewWithBackingStore: probe fails to find appropriate CFileEncoding class.
+DIFileEncodingNewWithBackingStore: returning 0x0000006B
+(continuing)
+DIResolveURLToBackingStore: processing level 2 encodings.
+DIFileEncodingNewWithBackingStore: entry for encoding level 2
+CBundleBackingStore::openDataFork: open for the first time
+CBundleBackingStore::openDataFork: returning 0
+CBundleBackingStore::openDataFork: returning 0
+CBundleBackingStore::readDataFork: ENTRY 512 at 65024 into 0xb00806fc
+                     ::readDataFork: band 0, 512 at 65024
+CBundleBackingStore::getBandEntry: NOT FOUND: band sector=0 not active
+CBundleBackingStore::bandPath: returning bands/0
+CBundleBackingStore::getBandEntry: calling f_openfrom(bands/0) with flags 0x000001b6
+CBundleBackingStore::getBandEntry: acquired RW lock
+CBundleBackingStore::getBandEntry: checking for chown/chmod
+CBundleBackingStore::getBandEntry: current perm 501,20 100644
+CBundleBackingStore::getBandEntry: bundle  perm 501,20 40755
+CBundleBackingStore::getBandEntry: getting flags returned 0
+CBundleBackingStore::getBandEntry: setting flags(not io-thread) returned 0
+CBundleBackingStore::getBandEntry: using pFreeEntry 0x52cc00
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 65024 from band 0 into 0xb00806fc
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 65024 currentPtr 0xb00806fc
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 61440 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x811800 to 0xb00806fc
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::closeDataFork: returning 0
+CBundleBackingStore::openDataFork: returning 0
+CBundleBackingStore::readDataFork: ENTRY 512 at 0 into 0xb00806fc
+                     ::readDataFork: band 0, 512 at 0
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 0 from band 0 into 0xb00806fc
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 0 currentPtr 0xb00806fc
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x810a00 to 0xb00806fc
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::closeDataFork: returning 0
+CBundleBackingStore::releaseBand: closing fd=5, sector=0
+CBundleBackingStore::releaseBands: releaseBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::releaseBands: flushBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::releaseBands: releaseBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::closeDataFork: releaseBands returned 0
+CBundleBackingStore::closeDataFork: returning 0
+CUDIFEncoding::newProbe: failing because backing store is not UDIF file
+DIFileEncodingNewWithBackingStore: probe fails to find appropriate CFileEncoding class.
+DIFileEncodingNewWithBackingStore: returning 0x0000006B
+(continuing)
+DIResolveURLToBackingStore: processing level 3 encodings.
+DIFileEncodingNewWithBackingStore: entry for encoding level 3
+checkTypeCreator:     /    
+checkTypeCreator: returning     , score 0
+CSegmentedNDIFEncoding::isSegmentedNDIFFile checkTypeCreator failed
+CSegmentedUDIFEncoding::isSegmentedUDIFFile backing store is not of type CUDIFEncoding
+DIFileEncodingNewWithBackingStore: probe fails to find appropriate CFileEncoding class.
+DIFileEncodingNewWithBackingStore: returning 0x0000006B
+(continuing)
+DIIsInitialized: returning YEScheckTypeCreator:     /    
+checkTypeCreator: returning     , score 0
+CUDIFDiskImage::checkBackingStoreType: backing store is wrong type
+checkBackingStoreType returned score 0 type     
+checkTypeCreator returned score 0 type     
+checkExtension returned score 0 type     
+CBundleBackingStore::openDataFork: open for the first time
+CBundleBackingStore::openDataFork: returning 0
+CBundleBackingStore::readDataFork: ENTRY 2048 at 32768 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 32768
+CBundleBackingStore::getBandEntry: NOT FOUND: band sector=0 not active
+CBundleBackingStore::bandPath: returning bands/0
+CBundleBackingStore::getBandEntry: calling f_openfrom(bands/0) with flags 0x000001b6
+CBundleBackingStore::getBandEntry: acquired RW lock
+CBundleBackingStore::getBandEntry: checking for chown/chmod
+CBundleBackingStore::getBandEntry: current perm 501,20 100644
+CBundleBackingStore::getBandEntry: bundle  perm 501,20 40755
+CBundleBackingStore::getBandEntry: getting flags returned 0
+CBundleBackingStore::getBandEntry: setting flags(not io-thread) returned 0
+CBundleBackingStore::getBandEntry: using pFreeEntry 0x52cc00
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 32768 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 32768 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 32768 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x810a00 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 34816 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 34816
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 34816 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 34816 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 32768 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x811200 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 36864 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 36864
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 36864 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 36864 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 36864 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x810a00 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 38912 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 38912
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 38912 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 38912 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 36864 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x811200 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 40960 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 40960
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 40960 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 40960 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 40960 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x810a00 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 43008 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 43008
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 43008 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 43008 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 40960 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x811200 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 45056 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 45056
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 45056 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 45056 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 45056 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x810a00 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 47104 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 47104
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 47104 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 47104 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 45056 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x811200 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 49152 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 49152
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 49152 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 49152 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 49152 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x810a00 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 0 into 0x810a00
+                     ::readDataFork: band 0, 512 at 0
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 0 from band 0 into 0x810a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 0 currentPtr 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x810c00 to 0x810a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 65024 at 512 into 0xe6000
+                     ::readDataFork: band 0, 65024 at 512
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 65024 at 512 from band 0 into 0xe6000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 512 currentPtr 0xe6000
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 3584 from 0x810e00 to 0xe6000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 4096 currentPtr 0xe6e00
+CBundleBackingStore::readDataFromBandEntry: phase II : read 61440 bytes into 0xe6e00
+CBundleBackingStore::readDataFromBandEntry: phase II : decoding 61440 bytes at 0xe6e00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (65024 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 512 into 0xb007cfd8
+                     ::readDataFork: band 0, 512 at 512
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 512 from band 0 into 0xb007cfd8
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 512 currentPtr 0xb007cfd8
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x810e00 to 0xb007cfd8
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 512 into 0xb0075f40
+                     ::readDataFork: band 0, 2048 at 512
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 512 from band 0 into 0xb0075f40
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 512 currentPtr 0xb0075f40
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x810e00 to 0xb0075f40
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 0 into 0x810a00
+                     ::readDataFork: band 0, 512 at 0
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 0 from band 0 into 0x810a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 0 currentPtr 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x810c00 to 0x810a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 65024 at 512 into 0xe6000
+                     ::readDataFork: band 0, 65024 at 512
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 65024 at 512 from band 0 into 0xe6000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 512 currentPtr 0xe6000
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 3584 from 0x810e00 to 0xe6000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 4096 currentPtr 0xe6e00
+CBundleBackingStore::readDataFromBandEntry: phase II : read 61440 bytes into 0xe6e00
+CBundleBackingStore::readDataFromBandEntry: phase II : decoding 61440 bytes at 0xe6e00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (65024 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 512 into 0xb007d008
+                     ::readDataFork: band 0, 512 at 512
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 512 from band 0 into 0xb007d008
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 512 currentPtr 0xb007d008
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x810e00 to 0xb007d008
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 512 into 0xb0075f70
+                     ::readDataFork: band 0, 2048 at 512
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 512 from band 0 into 0xb0075f70
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 512 currentPtr 0xb0075f70
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x810e00 to 0xb0075f70
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 0 into 0x810a00
+                     ::readDataFork: band 0, 512 at 0
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 0 from band 0 into 0x810a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 0 currentPtr 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x810c00 to 0x810a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 512 into 0x810a00
+                     ::readDataFork: band 0, 512 at 512
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 512 from band 0 into 0x810a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 512 currentPtr 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x810e00 to 0x810a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 0 into 0x810a00
+                     ::readDataFork: band 0, 512 at 0
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 0 from band 0 into 0x810a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 0 currentPtr 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x810c00 to 0x810a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 512 into 0x810a00
+                     ::readDataFork: band 0, 512 at 512
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 512 from band 0 into 0x810a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 512 currentPtr 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x810e00 to 0x810a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 16384 at 1024 into 0xc1000
+                     ::readDataFork: band 0, 16384 at 1024
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 16384 at 1024 from band 0 into 0xc1000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 1024 currentPtr 0xc1000
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 3072 from 0x811000 to 0xc1000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 4096 currentPtr 0xc1c00
+CBundleBackingStore::readDataFromBandEntry: phase II : read 12288 bytes into 0xc1c00
+CBundleBackingStore::readDataFromBandEntry: phase II : decoding 12288 bytes at 0xc1c00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 16384 currentPtr 0xc4c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 16384 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 1024 from 0x810c00 to 0xc4c00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (16384 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 24576 at 20480 into 0xe6000
+                     ::readDataFork: band 0, 24576 at 20480
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 24576 at 20480 from band 0 into 0xe6000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 20480 currentPtr 0xe6000
+CBundleBackingStore::readDataFromBandEntry: phase II : read 24576 bytes into 0xe6000
+CBundleBackingStore::readDataFromBandEntry: phase II : decoding 24576 bytes at 0xe6000
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (24576 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 20480 into 0xb007d108
+                     ::readDataFork: band 0, 512 at 20480
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 20480 from band 0 into 0xb007d108
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 20480 currentPtr 0xb007d108
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 20480 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x810c00 to 0xb007d108
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 20480 into 0xb0076070
+                     ::readDataFork: band 0, 2048 at 20480
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 20480 from band 0 into 0xb0076070
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 20480 currentPtr 0xb0076070
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 20480 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x810c00 to 0xb0076070
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 0 into 0x810a00
+                     ::readDataFork: band 0, 512 at 0
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 0 from band 0 into 0x810a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 0 currentPtr 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x810c00 to 0x810a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 512 into 0x810a00
+                     ::readDataFork: band 0, 512 at 512
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 512 from band 0 into 0x810a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 512 currentPtr 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x810e00 to 0x810a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 16384 at 1024 into 0xc1000
+                     ::readDataFork: band 0, 16384 at 1024
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 16384 at 1024 from band 0 into 0xc1000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 1024 currentPtr 0xc1000
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 3072 from 0x811000 to 0xc1000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 4096 currentPtr 0xc1c00
+CBundleBackingStore::readDataFromBandEntry: phase II : read 12288 bytes into 0xc1c00
+CBundleBackingStore::readDataFromBandEntry: phase II : decoding 12288 bytes at 0xc1c00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 16384 currentPtr 0xc4c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 16384 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 1024 from 0x810c00 to 0xc4c00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (16384 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 24576 at 20480 into 0xe6000
+                     ::readDataFork: band 0, 24576 at 20480
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 24576 at 20480 from band 0 into 0xe6000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 20480 currentPtr 0xe6000
+CBundleBackingStore::readDataFromBandEntry: phase II : read 24576 bytes into 0xe6000
+CBundleBackingStore::readDataFromBandEntry: phase II : decoding 24576 bytes at 0xe6000
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (24576 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 20480 into 0xb007d138
+                     ::readDataFork: band 0, 512 at 20480
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 20480 from band 0 into 0xb007d138
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 20480 currentPtr 0xb007d138
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 20480 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x810c00 to 0xb007d138
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 20480 into 0xb00760a0
+                     ::readDataFork: band 0, 2048 at 20480
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 20480 from band 0 into 0xb00760a0
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 20480 currentPtr 0xb00760a0
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 20480 into bandBuffer 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x810c00 to 0xb00760a0
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 32768 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 32768
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 32768 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 32768 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 32768 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x810a00 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 34816 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 34816
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 34816 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 34816 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 32768 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x811200 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 36864 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 36864
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 36864 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 36864 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 36864 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x810a00 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 38912 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 38912
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 38912 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 38912 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 36864 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x811200 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 40960 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 40960
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 40960 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 40960 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 40960 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x810a00 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 43008 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 43008
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 43008 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 43008 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 40960 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x811200 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 45056 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 45056
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 45056 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 45056 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 45056 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x810a00 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 47104 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 47104
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 47104 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 47104 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 45056 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x811200 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 2048 at 49152 into 0x816a00
+                     ::readDataFork: band 0, 2048 at 49152
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 2048 at 49152 from band 0 into 0x816a00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 49152 currentPtr 0x816a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 49152 into bandBuffer 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x810a00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 2048 from 0x810a00 to 0x816a00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (2048 bytes processed)
+CBundleBackingStore::releaseBand: closing fd=5, sector=0
+CBundleBackingStore::releaseBands: releaseBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::releaseBands: flushBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::releaseBands: releaseBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::closeDataFork: releaseBands returned 0
+CBundleBackingStore::closeDataFork: returning 0
+CSparseBundleDiskImage::newProbe: backing store is type CBundleBackingStore and diskimage-bundle-type=com.apple.diskimage.sparsebundle
+CSparseBundleDiskImage::newProbe: returning 1000
+CSparseBundleDiskImage::setBackingStore: inBackingStore->setPermission returned 0
+CBundleBackingStore::openDataFork: open for the first time
+CBundleBackingStore::openDataFork: returning 0
+CSparseBundleDiskImage::setBackingStore: inBackingStore->openDataFork returned 0
+CSparseBundleDiskImage::setBackingStore: inBackingStore->getDataForkLength returned 0 (65536 bytes)
+CSparseBundleDiskImage::setBackingStore: fSectorCount 128
+CSparseBundleDiskImage::setBackingStore: returning 0
+CSparseBundleDiskImage::newWithBackingStore: returning 0
+DIDiskImageNewWithBackingStore: returning 0x00000000
+2008-01-23 12:55:00.353 diskimages-helper[1963:1603] DIHelperAttach: resolving shadow/section options
+2008-01-23 12:55:00.353 diskimages-helper[1963:1603] resolveShadowAndSectionOptions: returned 0
+2008-01-23 12:55:00.354 diskimages-helper[1963:1603] DIHelperAttach: checking in-use (1)
+DIBackingStore::inUse: checking our list looking for who's naughty and nice
+DIBackingStore::inUse: checking image 0000
+------XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+DIBackingStore::inUse: checking image 0001
+------XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:00.357 diskimages-helper[1963:1603] performInUseVerification: returned 0
+2008-01-23 12:55:00.357 diskimages-helper[1963:1603] DIHelperAttach: checking SLA
+CDiskImage::LPic2CFD: entry
+CDiskImage::LPic2CFD: got backing store
+CDiskImage::LPic2CFD: cleanup
+CDiskImage::LPic2CFD: returning 0x0
+2008-01-23 12:55:00.358 diskimages-helper[1963:1603] DIHelperAttach: checking checksum
+2008-01-23 12:55:00.358 diskimages-helper[1963:1603] performChecksumVerification: image has no checksum
+2008-01-23 12:55:00.358 diskimages-helper[1963:1603] performChecksumVerification: returned 0
+2008-01-23 12:55:00.359 diskimages-helper[1963:1603] DIHelperAttach: checking in-use (2)
+DIBackingStore::inUse: checking our list looking for who's naughty and nice
+DIBackingStore::inUse: checking image 0000
+------XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+DIBackingStore::inUse: checking image 0001
+------XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:00.361 diskimages-helper[1963:1603] performInUseVerification: returned 0
+2008-01-23 12:55:00.362 diskimages-helper[1963:1603] DIHelperAttach: setting up IDME
+2008-01-23 12:55:00.362 diskimages-helper[1963:1603] -[DIHelperHDID initWithDiskImage:]
+2008-01-23 12:55:00.363 diskimages-helper[1963:1603] DIHelperAttach: attaching disk image
+2008-01-23 12:55:00.363 diskimages-helper[1963:1603] performAttach: entry
+2008-01-23 12:55:00.365 diskimages-helper[1963:1603] setMountFlags: 0x00000003
+2008-01-23 12:55:00.366 diskimages-helper[1963:1603] 0x00000003
+2008-01-23 12:55:00.366 diskimages-helper[1963:1603] setMountFlags: 0x00000000
+2008-01-23 12:55:00.367 diskimages-helper[1963:1603] 0x00000000
+2008-01-23 12:55:00.368 diskimages-helper[1963:1603] performAttach: before performVolumeChecking, about to attachReturningDictionary
+2008-01-23 12:55:00.368 diskimages-helper[1963:1603] -attachReturningDictionary:
+2008-01-23 12:55:00.370 diskimages-helper[1963:1603] _diskAppearedCallback: disk2s1
+2008-01-23 12:55:00.371 diskimages-helper[1963:1603]               : (null) Apple_partition_map
+2008-01-23 12:55:00.374 diskimages-helper[1963:1603] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:00.374 diskimages-helper[1963:1603] _diskAppearedCallback: disk2s2
+2008-01-23 12:55:00.375 diskimages-helper[1963:1603]               : /Volumes/xxx
+2008-01-23 12:55:00.377 diskimages-helper[1963:1603] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:00.378 diskimages-helper[1963:1603] _diskAppearedCallback: disk2
+2008-01-23 12:55:00.378 diskimages-helper[1963:1603]               : (null) Apple_partition_scheme
+2008-01-23 12:55:00.381 diskimages-helper[1963:1603] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:00.381 diskimages-helper[1963:1603] _diskAppearedCallback: disk1
+2008-01-23 12:55:00.382 diskimages-helper[1963:1603]               : (null) Apple_partition_scheme
+2008-01-23 12:55:00.384 diskimages-helper[1963:1603] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:00.385 diskimages-helper[1963:1603] _diskAppearedCallback: disk1s2
+2008-01-23 12:55:00.385 diskimages-helper[1963:1603]               : /Users/xxx/Coding
+2008-01-23 12:55:00.388 diskimages-helper[1963:1603] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:00.388 diskimages-helper[1963:1603] _diskAppearedCallback: disk1s1
+2008-01-23 12:55:00.389 diskimages-helper[1963:1603]               : (null) Apple_partition_map
+2008-01-23 12:55:00.391 diskimages-helper[1963:1603] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:00.392 diskimages-helper[1963:1603] _diskAppearedCallback: disk0
+2008-01-23 12:55:00.392 diskimages-helper[1963:1603]               : (null) GUID_partition_scheme
+2008-01-23 12:55:00.395 diskimages-helper[1963:1603] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got (null)
+2008-01-23 12:55:00.395 diskimages-helper[1963:1603] _diskAppearedCallback: disk0s1
+2008-01-23 12:55:00.396 diskimages-helper[1963:1603]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:00.398 diskimages-helper[1963:1603] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got (null)
+2008-01-23 12:55:00.399 diskimages-helper[1963:1603] _diskAppearedCallback: disk0s2
+2008-01-23 12:55:00.399 diskimages-helper[1963:1603]               : / XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:00.402 diskimages-helper[1963:1603] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got (null)
+2008-01-23 12:55:00.403 diskimages-helper[1963:1603] _diskAppearedCallback: disk0s3
+2008-01-23 12:55:00.403 diskimages-helper[1963:1603]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:00.405 diskimages-helper[1963:1603] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got (null)
+2008-01-23 12:55:00.406 diskimages-helper[1963:1603] _diskAppearedCallback: disk0s4
+2008-01-23 12:55:00.406 diskimages-helper[1963:1603]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:00.409 diskimages-helper[1963:1603] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got (null)
+2008-01-23 12:55:00.412 diskimages-helper[1963:1603] _attachOutKernel: spawning off thread to serve image
+2008-01-23 12:55:00.412 diskimages-helper[1963:1603] -waitForDevEntriesToAppear: (DA version)
+2008-01-23 12:55:00.412 diskimages-helper[1963:1603] _doneWaitingForDevEntries: entry
+2008-01-23 12:55:00.413 diskimages-helper[1963:1603]               : rootDiskIdentifier is NOT set
+2008-01-23 12:55:00.413 diskimages-helper[1963:2a27] -serveImage: kicking off monitorThread ********************
+2008-01-23 12:55:00.413 diskimages-helper[1963:1603]               : returning no
+2008-01-23 12:55:00.414 diskimages-helper[1963:2a27] serveImage: entry
+2008-01-23 12:55:00.414 diskimages-helper[1963:2a27] -incrementBackgroundThreadCount.
+2008-01-23 12:55:00.414 diskimages-helper[1963:2a27] -incrementBackgroundThreadCount: _backgroundThreadCount is now 2.
+2008-01-23 12:55:00.415 diskimages-helper[1963:4003] -incrementBackgroundThreadCount.
+2008-01-23 12:55:00.415 diskimages-helper[1963:2a27] -serveImage: attaching drive
+{
+    autodiskmount = 1;
+    "hdiagent-drive-identifier" = "E88D4141-B713-493A-9DB4-ADE0A10640D5";
+    "unmount-timeout" = 0;
+}
+DIIsInitialized: returning YESCDiskImage::createUniqueIDDict: creating array from backing store identifier.
+2008-01-23 12:55:00.415 diskimages-helper[1963:4003] -incrementBackgroundThreadCount: _backgroundThreadCount is now 3.
+2008-01-23 12:55:00.425 diskimages-helper[1963:4003] -_handleMonitorThread entry
+2008-01-23 12:55:00.426 diskimages-helper[1963:2a27] -serveImage: connecting to myDrive 0x00004613
+2008-01-23 12:55:00.427 diskimages-helper[1963:2a27] -serveImage: register _readBuffer 0x0x445000 with myDrive 0x0x0
+2008-01-23 12:55:00.427 diskimages-helper[1963:2a27] -serveImage: activating drive port 0x0x4903
+CBundleBackingStore::setBandsOnIOThread(YES) returning 0
+CBundleBackingStore::readDataFork: ENTRY 24576 at 0 into 0x445000
+                     ::readDataFork: band 0, 24576 at 0
+CBundleBackingStore::getBandEntry: NOT FOUND: band sector=0 not active
+CBundleBackingStore::bandPath: returning bands/0
+CBundleBackingStore::getBandEntry: calling f_openfrom(bands/0) with flags 0x000001b6
+CBundleBackingStore::getBandEntry: acquired RW lock
+CBundleBackingStore::getBandEntry: checking for chown/chmod
+CBundleBackingStore::getBandEntry: current perm 501,20 100644
+CBundleBackingStore::getBandEntry: bundle  perm 501,20 40755
+CBundleBackingStore::getBandEntry: getting flags returned 0
+CBundleBackingStore::getBandEntry: setting flags(ON IO-THREAD) returned 0
+CBundleBackingStore::getBandEntry: using pFreeEntry 0x52cc00
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 24576 at 0 from band 0 into 0x445000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 0 currentPtr 0x445000
+CBundleBackingStore::readDataFromBandEntry: phase II : read 24576 bytes into 0x445000
+CBundleBackingStore::readDataFromBandEntry: phase II : decoding 24576 bytes at 0x445000
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (24576 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 0 into 0x445000
+                     ::readDataFork: band 0, 512 at 0
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 0 from band 0 into 0x445000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 0 currentPtr 0x445000
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x81fe00 to 0x445000
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 512 into 0x445000
+                     ::readDataFork: band 0, 512 at 512
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 512 from band 0 into 0x445000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 512 currentPtr 0x445000
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x820000 to 0x445000
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 16384 at 1024 into 0x445000
+                     ::readDataFork: band 0, 16384 at 1024
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 16384 at 1024 from band 0 into 0x445000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 1024 currentPtr 0x445000
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 3072 from 0x820200 to 0x445000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 4096 currentPtr 0x445c00
+CBundleBackingStore::readDataFromBandEntry: phase II : read 12288 bytes into 0x445c00
+CBundleBackingStore::readDataFromBandEntry: phase II : decoding 12288 bytes at 0x445c00
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 16384 currentPtr 0x448c00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 16384 into bandBuffer 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 1024 from 0x81fe00 to 0x448c00
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (16384 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 0 into 0x445000
+                     ::readDataFork: band 0, 512 at 0
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 0 from band 0 into 0x445000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 0 currentPtr 0x445000
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x81fe00 to 0x445000
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 0 into 0x445000
+                     ::readDataFork: band 0, 512 at 0
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 0 from band 0 into 0x445000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 0 currentPtr 0x445000
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x81fe00 to 0x445000
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 512 into 0x445000
+                     ::readDataFork: band 0, 512 at 512
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 512 from band 0 into 0x445000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 512 currentPtr 0x445000
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 0 into bandBuffer 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x820000 to 0x445000
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+CBundleBackingStore::readDataFork: ENTRY 512 at 21504 into 0x445000
+                     ::readDataFork: band 0, 512 at 21504
+CBundleBackingStore::getBandEntry: FOUND: band fd=5,sector=0 is already active
+                                   : getBandEntry returned 0 (pEntry fd=5,sector=0)
+CBundleBackingStore::readDataFromBandEntry: ENTRY 512 at 21504 from band 0 into 0x445000
+CBundleBackingStore::readDataFromBandEntry: top of loop: bandOffset 21504 currentPtr 0x445000
+2008-01-23 12:55:00.514 diskimages-helper[1963:1603] _doneWaitingForDevEntries: entry
+2008-01-23 12:55:00.515 diskimages-helper[1963:1603]               : rootDiskIdentifier is NOT set
+2008-01-23 12:55:00.516 diskimages-helper[1963:1603]               : returning no
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: read 4096 bytes from offset 20480 into bandBuffer 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: decoding 4096 at 0x81fe00
+CBundleBackingStore::readDataFromBandEntry: phase 1/3: copying 512 from 0x820200 to 0x445000
+                                   : readDataFromBandEntry returned 0
+CBundleBackingStore::readDataFork: returning 0 (512 bytes processed)
+evEntries: entry
+2008-01-23 12:55:01.062 diskimages-helper[1963:1603]               : rootDiskIdentifier is NOT set
+                                                                     2008-01-23 12:55:01.062 diskimages-helper[1963:1603]               : returning no
+2008-01-23 12:55:01.077 diskimages-helper[1963:1603] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.077 diskimages-helper[1963:1603] _diskPeekCallback: peek received for disk3s1
+2008-01-23 12:55:01.078 diskimages-helper[1963:1603] _diskPeekCallback: caching automatic mount=YES for disk3s1
+2008-01-23 12:55:01.079 diskimages-helper[1963:1603]    setting kDADiskOptionsMountAutomatic to FALSE
+2008-01-23 12:55:01.082 diskimages-helper[1963:4003] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.082 diskimages-helper[1963:1603] _doneWaitingForDevEntries: entry
+2008-01-23 12:55:01.083 diskimages-helper[1963:4003] _diskPeekCallback: peek received for disk3
+2008-01-23 12:55:01.088 diskimages-helper[1963:1603]               : rootDiskIdentifier is NOT set
+2008-01-23 12:55:01.092 diskimages-helper[1963:4003] _diskPeekCallback: found rootDiskIdentifier to be disk3
+2008-01-23 12:55:01.092 diskimages-helper[1963:1603]               : returning no
+2008-01-23 12:55:01.095 diskimages-helper[1963:4003] _diskPeekCallback: caching automatic mount=YES for disk3
+2008-01-23 12:55:01.096 diskimages-helper[1963:1603] _diskAppearedCallback: disk3s1
+2008-01-23 12:55:01.096 diskimages-helper[1963:4003]    setting kDADiskOptionsMountAutomatic to FALSE
+2008-01-23 12:55:01.096 diskimages-helper[1963:1603]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.105 diskimages-helper[1963:1603] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.107 diskimages-helper[1963:1603] _doneWaitingForDevEntries: entry
+2008-01-23 12:55:01.108 diskimages-helper[1963:1603]               : got root disk identifier disk3
+2008-01-23 12:55:01.110 diskimages-helper[1963:1603]               : peek array not empty (
+    disk3s1,
+    disk3
+)
+2008-01-23 12:55:01.112 diskimages-helper[1963:4003] _diskAppearedCallback: disk3
+2008-01-23 12:55:01.112 diskimages-helper[1963:1603]               : peek count 2 does NOT equal diskAppeared count 1
+2008-01-23 12:55:01.113 diskimages-helper[1963:4003]               : (null) GUID_partition_scheme
+2008-01-23 12:55:01.113 diskimages-helper[1963:1603]               : returning no
+2008-01-23 12:55:01.124 diskimages-helper[1963:4003] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.132 diskimages-helper[1963:4003] diskAppearedCallback: found rootDiskIdentifier to be disk3
+2008-01-23 12:55:01.132 diskimages-helper[1963:4003] diskAppearedCalback: invalidating timers since peek is done - fsck could take a long time so we stop the timers
+2008-01-23 12:55:01.215 diskimages-helper[1963:1603] _doneWaitingForDevEntries: entry
+2008-01-23 12:55:01.216 diskimages-helper[1963:1603]               : got root disk identifier disk3
+2008-01-23 12:55:01.218 diskimages-helper[1963:1603]               : peek array not empty (
+    disk3s1,
+    disk3
+)
+2008-01-23 12:55:01.218 diskimages-helper[1963:1603]               : peek count equals diskAppeared count 2
+2008-01-23 12:55:01.221 diskimages-helper[1963:1603]               : root IOMedia object not busy
+2008-01-23 12:55:01.222 diskimages-helper[1963:1603] countIOMediaObjectsFrom returned 2
+2008-01-23 12:55:01.222 diskimages-helper[1963:1603]               : IOMedia count equals peek array count 2
+2008-01-23 12:55:01.223 diskimages-helper[1963:1603]               : returning YES
+2008-01-23 12:55:01.223 diskimages-helper[1963:1603] -waitForDevEntriesToAppear: found: (
+    disk3s1,
+    disk3
+)
+2008-01-23 12:55:01.223 diskimages-helper[1963:1603] buildReturnDictionary:
+2008-01-23 12:55:01.224 diskimages-helper[1963:1603] adding (disk3s1): {
+    "content-hint" = "Apple_HFS";
+    "dev-entry" = "/dev/disk3s1";
+    "potentially-mountable" = 0;
+    "unmapped-content-hint" = "48465300-0000-11AA-AA11-00306543ECAC";
+}
+2008-01-23 12:55:01.225 diskimages-helper[1963:1603] adding (disk3): {
+    "content-hint" = "GUID_partition_scheme";
+    "dev-entry" = "/dev/disk3";
+    "potentially-mountable" = 0;
+    "unmapped-content-hint" = "GUID_partition_scheme";
+}
+2008-01-23 12:55:01.225 diskimages-helper[1963:1603] -attachReturningDictionary: _buildReturnDictionary returned 0
+2008-01-23 12:55:01.226 diskimages-helper[1963:1603] -attachReturningDictionary: kicked off hdiejectd
+2008-01-23 12:55:01.227 diskimages-helper[1963:1603] performAttach: attachReturningDictionary returned 0
+{
+    "system-entities" =     (
+                {
+            "content-hint" = "Apple_HFS";
+            "dev-entry" = "/dev/disk3s1";
+            "potentially-mountable" = 0;
+            "unmapped-content-hint" = "48465300-0000-11AA-AA11-00306543ECAC";
+        },
+                {
+            "content-hint" = "GUID_partition_scheme";
+            "dev-entry" = "/dev/disk3";
+            "potentially-mountable" = 0;
+            "unmapped-content-hint" = "GUID_partition_scheme";
+        }
+    );
+}
+2008-01-23 12:55:01.227 diskimages-helper[1963:1603] performAttach: about to performVolumeChecking
+2008-01-23 12:55:01.228 diskimages-helper[1963:1603] performVolumeChecking: entry
+2008-01-23 12:55:01.228 diskimages-helper[1963:1603] _cachedFsckDataFor: entry
+2008-01-23 12:55:01.228 diskimages-helper[1963:1603] _cachedFsckDataFor: getxattr failed 93
+2008-01-23 12:55:01.229 diskimages-helper[1963:1603] _cachedFsckDataFor: returning (null)
+2008-01-23 12:55:01.229 diskimages-helper[1963:1603] _needToAutoFsck: returning YES
+2008-01-23 12:55:01.229 diskimages-helper[1963:1603] performVolumeChecking: nothing to auto-fsck
+2008-01-23 12:55:01.230 diskimages-helper[1963:1603] performAttach: performVolumeChecking returned 0
+2008-01-23 12:55:01.231 diskimages-helper[1963:1603] setMountFlags: 0x00000003
+2008-01-23 12:55:01.231 diskimages-helper[1963:1603] 0x00000003
+2008-01-23 12:55:01.232 diskimages-helper[1963:1603] -remountReturningDictionary:
+2008-01-23 12:55:01.233 diskimages-helper[1963:1603] mountDevEntries: (DiskArb version)
+2008-01-23 12:55:01.234 diskimages-helper[1963:1603] disk3s1
+2008-01-23 12:55:01.235 diskimages-helper[1963:4003] _diskAppearedCallback: disk3s1
+2008-01-23 12:55:01.237 diskimages-helper[1963:1603] >> {
+    DAAppearanceTime = 222782100.499613;
+    DABusName = "/";
+    DABusPath = "IODeviceTree:/";
+    DADeviceModel = "Disk Image";
+    DADevicePath = "IOService:/IOResources/IOHDIXController/IOHDIXHDDriveOutKernel/IODiskImageBlockStorageDeviceOutKernel";
+    DADeviceProtocol = "Virtual Interface";
+    DADeviceRevision = "10.5v192.1";
+    DADeviceUnit = 67;
+    DADeviceVendor = Apple;
+    DAMediaBSDMajor = 14;
+    DAMediaBSDMinor = 12;
+    DAMediaBSDName = disk3s1;
+    DAMediaBSDUnit = 3;
+    DAMediaBlockSize = 512;
+    DAMediaContent = "48465300-0000-11AA-AA11-00306543ECAC";
+    DAMediaEjectable = 1;
+    DAMediaIcon =     {
+        CFBundleIdentifier = "com.apple.iokit.IOStorageFamily";
+        IOBundleResourceFile = "Removable.icns";
+    };
+    DAMediaKind = IOMedia;
+    DAMediaLeaf = 1;
+    DAMediaName = "disk image";
+    DAMediaPath = "IOService:/IOResources/IOHDIXController/IOHDIXHDDriveOutKernel/IODiskImageBlockStorageDeviceOutKernel/IOBlockStorageDriver/Apple sparse bundle disk image Media/IOGUIDPartitionScheme/disk image@1";
+    DAMediaRemovable = 1;
+    DAMediaSize = 24576;
+    DAMediaUUID = <NSCFType: 0x533f40>;
+    DAMediaWhole = 0;
+    DAMediaWritable = 1;
+    DAVolumeMountable = 0;
+    DAVolumeNetwork = 0;
+} << 
+2008-01-23 12:55:01.238 diskimages-helper[1963:4003]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.238 diskimages-helper[1963:1603] disk3
+2008-01-23 12:55:01.241 diskimages-helper[1963:4003] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.242 diskimages-helper[1963:1603] >> {
+    DAAppearanceTime = 222782100.497264;
+    DABusName = "/";
+    DABusPath = "IODeviceTree:/";
+    DADeviceModel = "Disk Image";
+    DADevicePath = "IOService:/IOResources/IOHDIXController/IOHDIXHDDriveOutKernel/IODiskImageBlockStorageDeviceOutKernel";
+    DADeviceProtocol = "Virtual Interface";
+    DADeviceRevision = "10.5v192.1";
+    DADeviceUnit = 67;
+    DADeviceVendor = Apple;
+    DAMediaBSDMajor = 14;
+    DAMediaBSDMinor = 11;
+    DAMediaBSDName = disk3;
+    DAMediaBSDUnit = 3;
+    DAMediaBlockSize = 512;
+    DAMediaContent = "GUID_partition_scheme";
+    DAMediaEjectable = 1;
+    DAMediaIcon =     {
+        CFBundleIdentifier = "com.apple.iokit.IOStorageFamily";
+        IOBundleResourceFile = "Removable.icns";
+    };
+    DAMediaKind = IOMedia;
+    DAMediaLeaf = 0;
+    DAMediaName = "Apple sparse bundle disk image Media";
+    DAMediaPath = "IOService:/IOResources/IOHDIXController/IOHDIXHDDriveOutKernel/IODiskImageBlockStorageDeviceOutKernel/IOBlockStorageDriver/Apple sparse bundle disk image Media";
+    DAMediaRemovable = 1;
+    DAMediaSize = 65536;
+    DAMediaWhole = 1;
+    DAMediaWritable = 1;
+    DAVolumeMountable = 0;
+    DAVolumeNetwork = 0;
+} << 
+2008-01-23 12:55:01.243 diskimages-helper[1963:4003] _diskAppearedCallback: disk3
+2008-01-23 12:55:01.243 diskimages-helper[1963:1603] -remountReturningDictionary: _remountDevEntries returned 109
+2008-01-23 12:55:01.243 diskimages-helper[1963:4003]               : (null) GUID_partition_scheme
+2008-01-23 12:55:01.243 diskimages-helper[1963:1603] buildReturnDictionary:
+2008-01-23 12:55:01.246 diskimages-helper[1963:4003] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.247 diskimages-helper[1963:1603] adding (disk3s1): {
+    "content-hint" = "Apple_HFS";
+    "dev-entry" = "/dev/disk3s1";
+    "potentially-mountable" = 0;
+    "unmapped-content-hint" = "48465300-0000-11AA-AA11-00306543ECAC";
+}
+2008-01-23 12:55:01.249 diskimages-helper[1963:4003] diskAppearedCallback: found rootDiskIdentifier to be disk3
+2008-01-23 12:55:01.250 diskimages-helper[1963:1603] adding (disk3): {
+    "content-hint" = "GUID_partition_scheme";
+    "dev-entry" = "/dev/disk3";
+    "potentially-mountable" = 0;
+    "unmapped-content-hint" = "GUID_partition_scheme";
+}
+2008-01-23 12:55:01.250 diskimages-helper[1963:4003] diskAppearedCalback: invalidating timers since peek is done - fsck could take a long time so we stop the timers
+2008-01-23 12:55:01.251 diskimages-helper[1963:1603] -remountReturningDictionary: _buildReturnDictionary returned 109
+2008-01-23 12:55:01.251 diskimages-helper[1963:4003] _diskAppearedCallback: disk2s1
+2008-01-23 12:55:01.251 diskimages-helper[1963:1603] -remountReturningDictionary: detaching because no mountable filesystems.
+2008-01-23 12:55:01.252 diskimages-helper[1963:4003]               : (null) Apple_partition_map
+2008-01-23 12:55:01.252 diskimages-helper[1963:1603] -unmountAndDetachWithForce:YES andTryManualDetach:NO
+2008-01-23 12:55:01.255 diskimages-helper[1963:4003] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.255 diskimages-helper[1963:1603] -unmountAndDetachWithForce: using disk3
+2008-01-23 12:55:01.256 diskimages-helper[1963:4003] _diskAppearedCallback: disk2s2
+2008-01-23 12:55:01.259 diskimages-helper[1963:4003]               : /Volumes/xxx
+2008-01-23 12:55:01.261 diskimages-helper[1963:4003] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.262 diskimages-helper[1963:4003] _diskAppearedCallback: disk2
+2008-01-23 12:55:01.263 diskimages-helper[1963:1603] -unmountAndDetachWithForce: unmount returned 0
+2008-01-23 12:55:01.263 diskimages-helper[1963:4003]               : (null) Apple_partition_scheme
+2008-01-23 12:55:01.269 diskimages-helper[1963:4003] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+diskimages-helper: DI_kextDriveGetRequest returned 0x00000025 (37) ((os/kern) object terminated).
+2008-01-23 12:55:01.270 diskimages-helper[1963:4003] _diskAppearedCallback: disk1
+2008-01-23 12:55:01.275 diskimages-helper[1963:2a27] -serveImage: ALL DONE SERVING THE IMAGE (0)
+2008-01-23 12:55:01.275 diskimages-helper[1963:1603] -unmountAndDetachWithForce: eject returned 0
+2008-01-23 12:55:01.278 diskimages-helper[1963:4003]               : (null) Apple_partition_scheme
+2008-01-23 12:55:01.281 diskimages-helper[1963:2a27] -decrementBackgroundThreadCount: entry with error 0.
+2008-01-23 12:55:01.282 diskimages-helper[1963:1603] performAttach: remountReturningDictionary returned 109
+(null)
+2008-01-23 12:55:01.284 diskimages-helper[1963:4003] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.284 diskimages-helper[1963:2a27] -decrementBackgroundThreadCount: _backgroundThreadCount is now 2.
+2008-01-23 12:55:01.285 diskimages-helper[1963:4003] _diskAppearedCallback: disk1s2
+2008-01-23 12:55:01.286 diskimages-helper[1963:4003]               : /Users/xxx/Coding
+2008-01-23 12:55:01.288 diskimages-helper[1963:4003] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.288 diskimages-helper[1963:1603] performAttach: returned 109
+2008-01-23 12:55:01.289 diskimages-helper[1963:4003] _diskAppearedCallback: disk1s1
+2008-01-23 12:55:01.290 diskimages-helper[1963:4003]               : (null) Apple_partition_map
+CBundleBackingStore::releaseBand: closing fd=5, sector=0
+CBundleBackingStore::releaseBands: releaseBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::releaseBands: flushBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::releaseBands: releaseBand(fd=-1,sector=0) returned 0
+CBundleBackingStore::closeDataFork: releaseBands returned 0
+CBundleBackingStore::closeDataFork: returning 0
+closing 3 /Users/xxx/vilefault/tests/testimage.AES-128.64k.header_v2.sparsebundle/token closeDataFork 1987
+2008-01-23 12:55:01.292 diskimages-helper[1963:4003] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.292 diskimages-helper[1963:1603] DIHelperAttach performOperation: returning 109
+2008-01-23 12:55:01.293 diskimages-helper[1963:4003] _diskAppearedCallback: disk0
+2008-01-23 12:55:01.293 diskimages-helper[1963:1603] -decrementBackgroundThreadCount: _backgroundThreadCount is now 1.
+2008-01-23 12:55:01.294 diskimages-helper[1963:4003]               : (null) GUID_partition_scheme
+2008-01-23 12:55:01.294 diskimages-helper[1963:10b] DIHelper _report_results: reporting {
+    payload =     {
+    };
+    "result-code" = 109;
+}
+2008-01-23 12:55:01.297 diskimages-helper[1963:4003] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got (null)
+2008-01-23 12:55:01.298 diskimages-helper[1963:4003] _diskAppearedCallback: disk0s1
+2008-01-23 12:55:01.298 diskimages-helper[1963:4003]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.301 diskimages-helper[1963:4003] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got (null)
+2008-01-23 12:55:01.302 diskimages-helper[1963:4003] _diskAppearedCallback: disk0s2
+2008-01-23 12:55:01.302 diskimages-helper[1963:4003]               : / XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.305 diskimages-helper[1963:4003] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got (null)
+2008-01-23 12:55:01.306 diskimages-helper[1963:4003] _diskAppearedCallback: disk0s3
+2008-01-23 12:55:01.306 diskimages-helper[1963:4003]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.308 diskimages-helper[1963:4003] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got (null)
+2008-01-23 12:55:01.309 diskimages-helper[1963:4003] _diskAppearedCallback: disk0s4
+2008-01-23 12:55:01.309 diskimages-helper[1963:4003]               : (null) XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+2008-01-23 12:55:01.298 hdiutil[1961:1c03] reportResultsToFramework: proxy has finished operation
+2008-01-23 12:55:01.312 diskimages-helper[1963:4003] looking for UUID E88D4141-B713-493A-9DB4-ADE0A10640D5, got (null)
+2008-01-23 12:55:01.313 diskimages-helper[1963:4003] -_handleMonitorThread exit
+2008-01-23 12:55:01.313 diskimages-helper[1963:4003] -decrementBackgroundThreadCount: _backgroundThreadCount is now 0.
+2008-01-23 12:55:01.313 diskimages-helper[1963:4003] -[DIHelperHDID dealloc:]
+2008-01-23 12:55:01.310 hdiutil[1961:1c03] reportResultsToFramework: results are: {
+    payload =     {
+    };
+    "result-code" = 109;
+}
+2008-01-23 12:55:01.315 hdiutil[1961:1c03] reportResultsToFramework: _threadResultsError is 109
+2008-01-23 12:55:01.315 hdiutil[1961:1c03] reportResultsToFramework: disconnecting from helper.
+2008-01-23 12:55:01.416 hdiutil[1961:1c03] disconnectFromHelper: removing observers
+2008-01-23 12:55:01.417 hdiutil[1961:1c03] disconnectFromHelper: terminating proxy
+2008-01-23 12:55:01.419 diskimages-helper[1963:10b] DIHelper: terminateHelper: entry.
+2008-01-23 12:55:01.420 hdiutil[1961:1c03] disconnectFromHelper: terminated proxy
+2008-01-23 12:55:01.520 diskimages-helper[1963:10b] -DIHelperAgentMaster terminateUIAgentConnection.
+2008-01-23 12:55:01.528 diskimages-helper[1963:10b] DIHelper dealloc.
+2008-01-23 12:55:01.528 diskimages-helper[1963:10b] -DIHelperAgentMaster terminateUIAgentConnection.
+hdiutil: attach failed - no mountable file systems

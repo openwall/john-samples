@@ -1,0 +1,68 @@
+$ VBoxManage clonehd minimalistic.vdi minimalistic.raw -format RAW
+
+$ fdisk minimalistic.raw -lu  # to find the offset
+
+$ ./bdetools/bdeinfo -o 65536 -p password@12345 minimalistic.raw
+bdeinfo 20141205
+
+BitLocker Drive Encryption information:
+	Encryption method:		AES 128-bit
+	Volume identifier:		098bf606-020b-425f-88dd-c1e0ea4c728b
+	Creation time:			Dec 17, 2014 06:36:14.038110900 UTC
+	Description			:CRAPPY minimalistic 12/16/2014
+	Number of key protectors:	2
+
+Key protector 0:
+	Identifier:			2eb239f6-143c-44e1-afae-ea0ae132862d
+	Type:				Password
+
+Key protector 1:
+	Identifier:			081f6236-98b8-4ff7-b769-3c1b86b69533
+	Type:				Recovery password
+
+Unable to unlock volume.
+$ ./bdetools/bdeinfo -o 65536 -p password@123 minimalistic.raw
+bdeinfo 20141205
+
+BitLocker Drive Encryption information:
+	Encryption method:		AES 128-bit
+	Volume identifier:		098bf606-020b-425f-88dd-c1e0ea4c728b
+	Creation time:			Dec 17, 2014 06:36:14.038110900 UTC
+	Description			:CRAPPY minimalistic 12/16/2014
+	Number of key protectors:	2
+
+Key protector 0:
+	Identifier:			2eb239f6-143c-44e1-afae-ea0ae132862d
+	Type:				Password
+
+Key protector 1:
+	Identifier:			081f6236-98b8-4ff7-b769-3c1b86b69533
+	Type:				Recovery password
+
+$ ./bdetools/bdeinfo -o 65536 -p password@123 minimalistic.raw
+bdeinfo 20141205
+
+BitLocker Drive Encryption information:
+	Encryption method:		AES 128-bit
+	Volume identifier:		098bf606-020b-425f-88dd-c1e0ea4c728b
+	Creation time:			Dec 17, 2014 06:36:14.038110900 UTC
+	Description			:CRAPPY minimalistic 12/16/2014
+	Number of key protectors:	2
+
+Key protector 0:
+	Identifier:			2eb239f6-143c-44e1-afae-ea0ae132862d
+	Type:				Password
+
+Key protector 1:
+	Identifier:			081f6236-98b8-4ff7-b769-3c1b86b69533
+	Type:				Recovery password
+
+
+NOTES
+-----
+
+The sample images were generated on Windows 8.1 running under VirtualBox (in
+December, 2014).
+
+bitlocker-1.qcow2, bitlocker-2.qcow2, and bitlocker-3.qcow2 were generated on
+Windows 10 (1607) running under QEMU in March, 2017.
