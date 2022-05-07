@@ -53,7 +53,7 @@ TrueCrypt/TC-Volume-2/TC-Hidden-2.txt
   Mode:   XTS
   PKCS-5 PRF: HMAC-SHA-512
   Fmt Ver: 2
-===============================================================================	
+===============================================================================
 
 TrueCrypt/TC-STD-Volume/TC-STD-Volume.txt
 	Serpent (encryption), SHA-512 (hash), truecrypt(pwd), RIPEMD-160-keyfile
