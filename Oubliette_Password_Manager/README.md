@@ -16,3 +16,11 @@ Hash creation example:
       $oubliette-idea$1.0$9c846ab8c1dc703330521e7ca77489beded5d23b3aa821edea8f0324fbdb9f08
     oubliette-idea-complex-withdata-v15.oub
       $oubliette-idea$3.0$9c846ab8c1dc703330521e7ca77489beded5d23b3aa821edea8f0324fbdb9f08
+
+Testing the complex password requires target-enc set to iso-8859-1:
+
+    cat oubliette-passwords.txt >> run/password.lst
+    john -target-enc=iso-8859-1 oubliette-blowfish-complex.hash
+    john -target-enc=iso-8859-1 oubliette-blowfish-complex-withdata-v15.hash
+    john -target-enc=iso-8859-1 oubliette-idea-complex.hash
+    john -target-enc=iso-8859-1 oubliette-idea-complex-withdata-v15.hash
