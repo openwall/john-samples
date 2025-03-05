@@ -2,7 +2,7 @@ Oubliette Password Manager - Sample files
 =========================================
 
 Hash creation example:
-
+```
     for f in *.oub ; do echo $f ; echo -n '  ' ; ./oubliette2john.py $f ; done
     oubliette-blowfish-12345678.oub
       $oubliette-blowfish$16c863009dbc7a89fa26520aeeae5543beda0bbf41622be472d7c7320c8ea66f
@@ -16,11 +16,11 @@ Hash creation example:
       $oubliette-idea$9c846ab8c1dc703330521e7ca77489beded5d23b3aa821edea8f0324fbdb9f08
     oubliette-idea-complex-withdata-v15.oub
       $oubliette-idea$9c846ab8c1dc703330521e7ca77489beded5d23b3aa821edea8f0324fbdb9f08
+```
+Testing the passwords:
+```
+    john -w:oubliette-passwords.txt *.hash
+```
+The complex test vector is originally made in ISO-8859-1 and thus `--target-encoding=iso-8859-1` would be needed. In order to avoid that, the hint file `oubliette-passwords.txt` now contains two versions of it, one in UTF-8 and one in ISO-8859-1, so that extra option is not needed.
 
-Testing the complex password requires target-enc set to iso-8859-1:
-
-    cat oubliette-passwords.txt >> run/password.lst
-    john -target-enc=iso-8859-1 oubliette-blowfish-complex.hash
-    john -target-enc=iso-8859-1 oubliette-blowfish-complex-withdata-v15.hash
-    john -target-enc=iso-8859-1 oubliette-idea-complex.hash
-    john -target-enc=iso-8859-1 oubliette-idea-complex-withdata-v15.hash
+See `docs/ENCODINGS` in the john tree for more information.
